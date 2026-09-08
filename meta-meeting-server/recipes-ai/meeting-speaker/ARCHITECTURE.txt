@@ -1,0 +1,27 @@
+HL MEET V20 SPEAKER ENGINE
+
+Purpose:
+  Speaker diarization only.
+
+Input:
+  Mono 16 kHz PCM audio.
+
+Output:
+  start_sec
+  end_sec
+  speaker_id
+
+Planned runtime:
+  sherpa-onnx native
+
+Planned models:
+  pyannote segmentation 3.0 ONNX
+  speaker embedding ONNX
+
+Rules:
+  MUST NOT modify STT transcript.
+  MUST NOT perform translation.
+  MUST NOT identify a real person unless explicitly enrolled.
+
+Phase 1:
+  Offline FINAL-turn diarization only.

@@ -1,0 +1,18 @@
+{
+  "note": "The original models/stt/gipformer-65M-rnnt/test_wavs/0.wav is absent in the current local asset copy. This probe was extracted from tests/assets/weanxinviec.mp3 at 4.046s-5.676s and locked as the replacement baseline.",
+  "probe_wav": "baselines/phase0/vi_probe.wav",
+  "probe_source_audio": "tests/assets/weanxinviec.mp3",
+  "probe_window_seconds": {
+    "start": 4.046,
+    "duration": 1.63
+  },
+  "model_id": "gipformer-65M-rnnt",
+  "provider": "cpu",
+  "raw_text": "ĐỊNH NGHĨA THẾ NÀO LÀ ĂN MẶC ĐẸP",
+  "clean_lower_text": "định nghĩa thế nào là ăn mặc đẹp",
+  "normalize_text": "ĐỊNH NGHĨA THẾ NÀO LÀ ĂN MẶC ĐẸP",
+  "capu_text": "Định nghĩa thế nào là ăn mặc đẹp?",
+  "legacy_expected_probe_raw_text": "RỒI CŨNG HỖ TRỢ CHO LÂU LÂU CŨNG CHO GẠO CHO NÀY KIA",
+  "legacy_expected_probe_clean_lower_text": "rồi cũng hỗ trợ cho lâu lâu cũng cho gạo cho này kia",
+  "legacy_expected_probe_capu_text": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia."
+}

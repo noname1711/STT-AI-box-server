@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>HL Meet V20 · STT + Speaker + Translation Test Console</title>
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">HL MEET · V20 VALIDATION</div>
+        <h1>STT + Speaker + Translation Test Console</h1>
+        <p class="subtitle">
+          Theo dõi VIT LIVE/FINAL, anonymous speaker ID ổn định theo room và bản dịch EN↔VI chỉ từ logical FINAL. STT realtime/correction giữ nguyên.
+        </p>
+      </div>
+      <div class="status-cluster">
+        <span id="connectionBadge" class="badge bad">Disconnected</span>
+        <span id="captureBadge" class="badge neutral">Mic off</span>
+        <span id="versionBadge" class="badge neutral">AI Box —</span>
+      </div>
+    </header>
+
+    <section class="panel setup-panel">
+      <div class="field grow">
+        <label for="backend">AI Box backend</label>
+        <input id="backend" value="http://meeting-server.local:8080" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="room">Room</label>
+        <input id="room" value="longform-test" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="speaker">Client name</label>
+        <input id="speaker" value="Hùng" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="language">Language</label>
+        <select id="language">
+          <option value="vi" selected>Tiếng Việt</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <div class="field mic-field">
+        <label for="microphone">Microphone</label>
+        <div class="mic-picker">
+          <select id="microphone" aria-label="Microphone input">
+            <option value="">System default</option>
+          </select>
+          <button id="refreshMicsBtn" type="button" class="button ghost mic-refresh">Refresh</button>
+        </div>
+      </div>
+      <div class="button-row">
+        <button id="connectBtn" class="button secondary">Connect</button>
+        <button id="micBtn" class="button primary" disabled>Start microphone</button>
+        <button id="clearBtn" class="button ghost">Clear view</button>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Runtime metrics">
+      <div class="metric"><span>ASR queue</span><strong id="mQueue">—</strong></div>
+      <div class="metric"><span>Dropped audio</span><strong id="mDropped">—</strong></div>
+      <div class="metric"><span>VIT preview errors</span><strong id="mPreviewErrors">—</strong></div>
+      <div class="metric"><span>VIT FINAL errors</span><strong id="mFinalErrors">—</strong></div>
+      <div class="metric speaker-metric"><span>Speaker results</span><strong id="mSpeakerResults">—</strong></div>
+      <div class="metric speaker-metric"><span>Speaker errors</span><strong id="mSpeakerErrors">—</strong></div>
+      <div class="metric translation-metric"><span>Translation queue</span><strong id="mTranslationQueue">—</strong></div>
+      <div class="metric translation-metric"><span>Translated</span><strong id="mTranslationDone">—</strong></div>
+      <div class="metric translation-metric"><span>Translation errors</span><strong id="mTranslationErrors">—</strong></div>
+      <div class="metric"><span>FINAL decoder</span><strong id="mFinalDecoder">—</strong></div>
+    </section>
+
+    <section class="panel transcript-panel">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">PRIMARY VIEW</div>
+          <h2>Transcript liên tục</h2>
+          <p>Không render từng segment thành card. Các segment được ghép thành một đoạn văn theo thời gian.</p>
+        </div>
+        <div class="section-actions">
+          <label class="toggle">
+            <input id="showTranslation" type="checkbox" checked>
+            <span>Dịch</span>
+          </label>
+          <button id="copyBtn" class="button ghost small">Copy</button>
+          <button id="exportBtn" class="button ghost small">Export TXT</button>
+        </div>
+      </div>
+
+      <article id="longTranscript" class="long-transcript empty" aria-live="polite">
+        <span class="placeholder">Nhấn “Start microphone” và bắt đầu đọc. Toàn bộ kết quả sẽ chảy vào đây như một đoạn văn duy nhất.</span>
+      </article>
+
+      <div id="liveTailWrap" class="live-tail-wrap hidden">
+        <div class="live-label">
+          <span class="pulse-dot"></span>
+          LIVE · VIT draft
+        </div>
+        <div id="liveTail" class="live-tail"></div>
+      </div>
+
+      <div id="translationWrap" class="translation-wrap hidden" aria-live="polite">
+        <div class="translation-head">
+          <div id="translationLabel" class="translation-label">TRANSLATION · FINAL ONLY</div>
+          <div id="translationStatus" class="translation-status">Waiting for logical FINAL…</div>
+        </div>
+        <div id="translationText" class="translation-text"></div>
+      </div>
+    </section>
+
+    <section class="panel diagnostic-panel">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">DIAGNOSTIC</div>
+          <h2>Logical turns & segment timeline</h2>
+          <p>Theo dõi logical turn, anonymous speaker metadata, FINAL transcript correction và FINAL translation của backend V20.</p>
+        </div>
+      </div>
+
+      <div class="diagnostic-grid">
+        <div>
+          <h3>Logical turns</h3>
+          <div id="turnList" class="turn-list">
+            <div class="empty-note">Chưa có dữ liệu.</div>
+          </div>
+        </div>
+        <div>
+          <h3>Raw segment events</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Turn</th>
+                  <th>Seg</th>
+                  <th>State</th>
+                  <th>Source</th>
+                  <th>Rev</th>
+                  <th>Audio</th>
+                  <th>Proc.</th>
+                  <th>Speaker</th>
+                  <th>Text</th>
+                  <th>Translation</th>
+                </tr>
+              </thead>
+              <tbody id="segmentTable">
+                <tr><td colspan="11" class="empty-cell">Chưa có transcript event.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel log-panel">
+      <details>
+        <summary>Event log</summary>
+        <pre id="eventLog"></pre>
+      </details>
+    </section>
+
+    <footer>
+      <span>HL Meet V20 · VIT STT + anonymous speaker + FINAL EN↔VI translation</span>
+      <span id="audioInfo">Audio: idle</span>
+    </footer>
+  </main>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

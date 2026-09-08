@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+
+echo "Downloading assets directly from Hugging Face and GitHub..."
+echo "NOTE: scripts/download-assets is a maintainer helper. For normal setup, use: stt-cli download-models"
+"$ROOT/capu-worker/.venv/bin/python" "$ROOT/scripts/download_assets.py" "$@"

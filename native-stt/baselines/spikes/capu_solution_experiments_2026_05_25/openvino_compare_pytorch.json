@@ -1,0 +1,48 @@
+{
+  "input_shapes": {
+    "input_ids": [
+      1,
+      54
+    ],
+    "attention_mask": [
+      1,
+      54
+    ],
+    "input_offsets": [
+      1,
+      42
+    ]
+  },
+  "comparisons": [
+    {
+      "output_index": 0,
+      "shape_pt": [
+        1,
+        42,
+        15
+      ],
+      "shape_ov": [
+        1,
+        42,
+        15
+      ],
+      "max_abs_diff": 0.1920337677001953,
+      "mean_abs_diff": 0.028557660058140755
+    },
+    {
+      "output_index": 1,
+      "shape_pt": [
+        1,
+        42,
+        4
+      ],
+      "shape_ov": [
+        1,
+        42,
+        4
+      ],
+      "max_abs_diff": 0.20947647094726562,
+      "mean_abs_diff": 0.03561430424451828
+    }
+  ]
+}

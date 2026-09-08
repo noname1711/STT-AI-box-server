@@ -1,0 +1,39 @@
+# HL Meet v19 native VIT-STT runtime.
+# VIT is the only ASR stack on the appliance, so all six Orin Nano CPU cores are
+# available to the recognizer thread pool. This changes throughput/latency, not
+# the acoustic/model weights or decoder search semantics.
+
+models_config_path = "config/models.local.json"
+asset_lock_path = "baselines/phase0/assets.lock.json"
+
+provider = "cpu"
+num_threads = 6
+[capu]
+engine = "auto"
+python_bin = "capu-worker/.venv/bin/python"
+worker_dir = "capu-worker"
+model_name = "vibert-capu"
+base_model_name = "base_model"
+device = "cpu"
+request_timeout_seconds = 120
+
+[server]
+host = "127.0.0.1"
+port = 8091
+max_audio_seconds = 30
+max_upload_mb = 16
+owned_by = "hl-meet"
+# Vietnamese is the product benchmark path and is warm at boot. The company
+# English model remains available and lazy-loads only when English is selected.
+warm_start_models = ["vit_stt_vi_v2"]
+warm_start_timeout_seconds = 120
+
+[vad]
+# meeting-server owns continuous capture/VAD. Keep native VAD disabled to avoid
+# a second destructive segmentation pass.
+enabled = false
+profile = "ten"
+threshold = 0.5
+min_silence = 0.5
+min_speech = 0.05
+max_speech = 14.0

@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+OUT_DIR="${1:-$ROOT/release/vit-stt}"
+INCLUDE_MODELS="${VIT_STT_INCLUDE_MODELS:-0}"
+BIN_DIR="${VIT_STT_RELEASE_BIN_DIR:-$ROOT/target/release}"
+
+copy_tree() {
+  local src="$1"
+  local dst="$2"
+  cp -cR "$src" "$dst" 2>/dev/null || cp -R "$src" "$dst"
+}
+
+mkdir -p "$OUT_DIR/bin" "$OUT_DIR/models" "$OUT_DIR/config" "$OUT_DIR/baselines/phase0" "$OUT_DIR/runtime/capu"
+
+if [[ "$INCLUDE_MODELS" == "1" ]]; then
+  echo "WARNING: bundling model assets into release. Ensure MODEL_BOM, THIRD_PARTY_NOTICES, and license files are reviewed for offline redistribution." >&2
+fi
+
+if [[ -x "$BIN_DIR/stt-http" ]]; then
+  cp "$BIN_DIR/stt-http" "$OUT_DIR/bin/"
+elif [[ -x "$BIN_DIR/stt-http.exe" ]]; then
+  cp "$BIN_DIR/stt-http.exe" "$OUT_DIR/bin/"
+else
+  echo "missing stt-http binary in $BIN_DIR" >&2
+  exit 1
+fi
+
+if [[ -x "$BIN_DIR/stt-cli" ]]; then
+  cp "$BIN_DIR/stt-cli" "$OUT_DIR/bin/"
+elif [[ -x "$BIN_DIR/stt-cli.exe" ]]; then
+  cp "$BIN_DIR/stt-cli.exe" "$OUT_DIR/bin/"
+else
+  echo "missing stt-cli binary in $BIN_DIR" >&2
+  exit 1
+fi
+
+cp "$ROOT/config/runtime.toml" "$ROOT/config/models.local.json" "$OUT_DIR/config/"
+cp "$ROOT/baselines/phase0/assets.lock.json" "$ROOT/baselines/phase0/vi_probe.expected.json" "$ROOT/baselines/phase0/capu_snippets.jsonl" "$ROOT/baselines/phase0/vi_probe.wav" "$OUT_DIR/baselines/phase0/"
+
+if [[ "$INCLUDE_MODELS" != "0" ]]; then
+  copy_tree "$ROOT/models/stt" "$OUT_DIR/models/"
+  copy_tree "$ROOT/models/vad" "$OUT_DIR/models/"
+  copy_tree "$ROOT/models/capu" "$OUT_DIR/models/"
+fi
+
+"$ROOT/scripts/package-legal-files.sh" "$OUT_DIR"
+
+mkdir -p "$OUT_DIR/scripts" "$OUT_DIR/docs"
+cp "$ROOT/scripts/check-server-deps.sh" "$OUT_DIR/scripts/"
+cp "$ROOT/scripts/prepare-server-models.sh" "$OUT_DIR/scripts/"
+cp "$ROOT/docs/SERVER_HANDOFF.md" "$OUT_DIR/docs/"
+chmod +x "$OUT_DIR/scripts/check-server-deps.sh" "$OUT_DIR/scripts/prepare-server-models.sh"
+
+CAPU_WORKER_SRC="${VIT_STT_CAPU_WORKER_SRC:-$ROOT/runtime/capu/vit-stt-capu-worker-full-numpy}"
+if [[ -x "$CAPU_WORKER_SRC/vit-stt-capu-worker-full-numpy.exe" ]]; then
+  copy_tree "$CAPU_WORKER_SRC" "$OUT_DIR/runtime/capu/"
+  CAPU_WORKER_EXE="runtime/capu/vit-stt-capu-worker-full-numpy/vit-stt-capu-worker-full-numpy.exe"
+elif [[ -x "$CAPU_WORKER_SRC/vit-stt-capu-worker-full-numpy" ]]; then
+  copy_tree "$CAPU_WORKER_SRC" "$OUT_DIR/runtime/capu/"
+  CAPU_WORKER_EXE="runtime/capu/vit-stt-capu-worker-full-numpy/vit-stt-capu-worker-full-numpy"
+else
+  CAPU_WORKER_EXE=""
+fi
+
+if [[ -n "$CAPU_WORKER_EXE" ]]; then
+  awk '
+    /^\[capu\]$/ {
+      print
+      print "worker_exe = \"'"$CAPU_WORKER_EXE"'\""
+      next
+    }
+    { print }
+  ' "$OUT_DIR/config/runtime.toml" > "$OUT_DIR/config/runtime.toml.tmp"
+  mv "$OUT_DIR/config/runtime.toml.tmp" "$OUT_DIR/config/runtime.toml"
+else
+  # Stage the python worker files so it can run via python
+  mkdir -p "$OUT_DIR/capu-worker"
+  copy_tree "$ROOT/capu-worker/capu_worker" "$OUT_DIR/capu-worker/"
+  cp "$ROOT/capu-worker/pyproject.toml" "$OUT_DIR/capu-worker/"
+fi
+
+echo "Release layout staged at $OUT_DIR"

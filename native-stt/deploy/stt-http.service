@@ -1,0 +1,30 @@
+[Unit]
+Description=vit-stt HTTP Speech-to-Text Service
+After=network.target
+
+[Service]
+Type=simple
+User=vit-stt
+WorkingDirectory=/opt/vit-stt
+
+# Specify environment variable for resource discovery
+Environment="VIT_STT_RUNTIME_ROOT=/opt/vit-stt"
+Environment="VIT_STT_MODELS_DIR=/opt/vit-stt/models"
+
+# Execute the HTTP server binary
+ExecStart=/opt/vit-stt/bin/stt-http
+
+# Automatically restart if service crashes
+Restart=always
+RestartSec=5
+
+# Limit resource usage if desired (optional)
+# CPUQuota=200%
+# MemoryLimit=4G
+
+# Forward standard out/err to journald
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

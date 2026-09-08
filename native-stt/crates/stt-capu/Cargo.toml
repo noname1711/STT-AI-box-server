@@ -1,0 +1,28 @@
+[package]
+name = "stt-capu"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+publish.workspace = true
+
+[features]
+default = []
+onnx-spike = ["dep:clap", "dep:ort", "dep:tokenizers"]
+
+[dependencies]
+anyhow.workspace = true
+clap = { workspace = true, optional = true }
+ort = { version = "=2.0.0-rc.12", optional = true }
+serde.workspace = true
+serde_json.workspace = true
+tempfile.workspace = true
+thiserror.workspace = true
+tokenizers = { version = "0.22", optional = true }
+tracing.workspace = true
+stt-core = { path = "../stt-core" }
+
+[[bin]]
+name = "capu_onnx_spike"
+path = "src/bin/capu_onnx_spike.rs"
+required-features = ["onnx-spike"]

@@ -1,0 +1,5 @@
+onnx
+onnxscript
+torch
+transformers<4.35,>=4.34.0
+sentencepiece

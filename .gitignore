@@ -1,0 +1,35 @@
+# Local/editor files
+.DS_Store
+.idea/
+.vscode/
+*~
+*.bak
+*.orig
+__pycache__/
+*.pyc
+*.log
+
+# Build/cache output
+.cache/
+build/
+build-*/
+tmp/
+work/
+downloads/
+sstate-cache/
+cache/
+sdk-orin/
+
+# Generated model/native bundles. Recreated by scripts/rebuild.sh.
+meta-meeting-server/recipes-ai/meeting-translation-models/files/envit5-ct2.tar
+meta-meeting-server/recipes-ai/meeting-vit-stt/files/vit-stt-bin-orin-aarch64.tar.zst
+meta-meeting-server/recipes-ai/meeting-vit-stt/files/vit-stt-meeting-models.tar.zst
+
+# Yocto deploy artifacts
+*.ext4
+*.wic
+*.wic.*
+*.tegraflash*
+*.rootfs.*
+*.spdx.tar.*
+*.testdata.json

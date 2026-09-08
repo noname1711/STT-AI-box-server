@@ -1,0 +1,11 @@
+.model-work/
+recipes-ai/meeting-models/files/models.tar.zst
+recipes-ai/meeting-translation-models/files/models.tar.zst
+*.tegraflash-tar.zst
+__pycache__/
+*.pyc
+*.rollback-*
+*.backup*
+.v19.*
+*.v*-backup*
+recipes-ai/meeting-translation-models/files/envit5-ct2.tar

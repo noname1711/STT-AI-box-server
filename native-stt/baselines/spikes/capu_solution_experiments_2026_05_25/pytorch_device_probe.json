@@ -1,0 +1,28 @@
+{
+  "torch": "2.12.0",
+  "mps_available": true,
+  "results": [
+    {
+      "device": "cpu",
+      "ok": true,
+      "init_ms": 808.0866659984167,
+      "first_ms": 79.84133300124086,
+      "mean_ms": 67.97776884959603,
+      "p50_ms": 67.99624999985099,
+      "min_ms": 67.13825000042561,
+      "max_ms": 70.1054999990447,
+      "output": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác."
+    },
+    {
+      "device": "mps",
+      "ok": true,
+      "init_ms": 950.2083339975798,
+      "first_ms": 1607.2998749987164,
+      "mean_ms": 45.85903959978168,
+      "p50_ms": 45.52016699744854,
+      "min_ms": 41.72791699966183,
+      "max_ms": 51.8582080003398,
+      "output": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác."
+    }
+  ]
+}

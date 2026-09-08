@@ -1,0 +1,17 @@
+{
+  "artifact": "/var/folders/6w/8nvgqnh12610f4hjp6gmyl3w0000gn/T/torchinductor_leakless/c3n4npb67fg3lfl5gtwp4w5fkgv7himym4njl2kre7btqhcf7qh5/ca543ibtzv27ro5hmokeqj2tdxusg2owkp3mylw37dy3wbv53lii.wrapper.pt2",
+  "load_ok": true,
+  "max_abs_diff": 1.9073486328125e-05,
+  "eager_raw_neural": {
+    "mean_ms": 22.425805449529435,
+    "p50_ms": 21.4363749983022,
+    "min_ms": 16.195167001569644,
+    "max_ms": 107.07187499792781
+  },
+  "aoti_raw_neural": {
+    "mean_ms": 19.48332126994501,
+    "p50_ms": 18.977499996253755,
+    "min_ms": 14.78158299869392,
+    "max_ms": 49.07291700510541
+  }
+}

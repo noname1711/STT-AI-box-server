@@ -1,0 +1,42 @@
+{
+  "openvino_compile_ms": 134.67862499965122,
+  "input_names": [
+    "attention_mask",
+    "input_ids",
+    "input_offsets"
+  ],
+  "parity": [
+    {
+      "id": "probe",
+      "expected": "Định nghĩa thế nào là ăn mặc đẹp?",
+      "openvino": "ĐỊNH NGHĨA THẾ NÀO LÀ ĂN MẶC ĐẸP",
+      "matches": false
+    },
+    {
+      "id": "long_vi_segment",
+      "expected": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+      "openvino": "XIN KÍNH CHÀO QUÝ VỊ KHÁN GIẢ THƯA QUÝ VỊ CHỈ ÍT PHÚT NỮA THÌ KỲ HỌP THỨ NHẤT QUỐC HỘI KHÓA MƯỜI SÁU SẼ ĐƯỢC KHAI MẠC TRỌNG THỂ",
+      "matches": false
+    },
+    {
+      "id": "legacy_expected_test_transcript",
+      "expected": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+      "openvino": "RỒI CŨNG HỖ TRỢ CHO LÂU LÂU CŨNG CHO GẠO CHO NÀY KIA",
+      "matches": false
+    },
+    {
+      "id": "model_card_example",
+      "expected": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+      "openvino": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+      "matches": true
+    }
+  ],
+  "first_ms": 48.89004199503688,
+  "warm_summary": {
+    "mean_ms": 49.488513340184,
+    "p50_ms": 48.694083001464605,
+    "min_ms": 45.74316700018244,
+    "max_ms": 70.08412499999395
+  },
+  "sample_output": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác."
+}

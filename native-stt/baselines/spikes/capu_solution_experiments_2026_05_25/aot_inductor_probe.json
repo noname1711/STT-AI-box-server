@@ -1,0 +1,24 @@
+{
+  "torch": "2.12.0",
+  "input_shapes": [
+    [
+      1,
+      54
+    ],
+    [
+      1,
+      54
+    ],
+    [
+      1,
+      42
+    ]
+  ],
+  "torch_export_ok": true,
+  "torch_export_ms": 914.3917080000392,
+  "graph_module_nodes": 582,
+  "aoti_available": true,
+  "aoti_compile_ok": true,
+  "aoti_compile_ms": 9954.600500001106,
+  "aoti_artifact": "/var/folders/6w/8nvgqnh12610f4hjp6gmyl3w0000gn/T/torchinductor_leakless/c3n4npb67fg3lfl5gtwp4w5fkgv7himym4njl2kre7btqhcf7qh5/ca543ibtzv27ro5hmokeqj2tdxusg2owkp3mylw37dy3wbv53lii.wrapper.pt2"
+}

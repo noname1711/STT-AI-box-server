@@ -1,0 +1,30 @@
+{
+  "artifact": "/Users/leakless/code/vit-stt/models/capu/generated/dragonSwing--vibert-capu-torchscript/seq2labels.torchscript.pt",
+  "input_shapes": [
+    [
+      1,
+      54
+    ],
+    [
+      1,
+      54
+    ],
+    [
+      1,
+      42
+    ]
+  ],
+  "max_abs_diff": 0.0,
+  "eager_raw_neural": {
+    "mean_ms": 23.735670409769227,
+    "p50_ms": 22.84620800128323,
+    "min_ms": 16.43187500303611,
+    "max_ms": 129.79170899780001
+  },
+  "torchscript_raw_neural": {
+    "mean_ms": 21.61842325996986,
+    "p50_ms": 20.57937499921536,
+    "min_ms": 14.979083000071114,
+    "max_ms": 106.23124999983702
+  }
+}

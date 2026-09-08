@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.vit-stt.http</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/vit3/ai4pro/vit-stt/target/release/stt-http</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/vit3/ai4pro/vit-stt</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>VIT_STT_RUNTIME_ROOT</key>
+        <string>/Users/vit3/ai4pro/vit-stt</string>
+        <key>VIT_STT_MODELS_DIR</key>
+        <string>/Users/vit3/ai4pro/vit-stt/models</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>SessionCreate</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/vit3/ai4pro/vit-stt/logs/stt-http.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/vit3/ai4pro/vit-stt/logs/stt-http.err.log</string>
+
+    <key>UserName</key>
+    <string>vit3</string>
+</dict>
+</plist>

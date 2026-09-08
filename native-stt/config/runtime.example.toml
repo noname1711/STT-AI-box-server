@@ -1,0 +1,105 @@
+# vit-stt runtime configuration
+#
+# Copy this file to config/runtime.toml and adjust for your deployment.
+# All paths are relative to the workspace root or runtime root.
+
+# Path to the asset lock file (checksums + download URLs for model assets).
+asset_lock_path = "baselines/phase0/assets.lock.json"
+
+# Path to the model registry (list of STT and CAPU model aliases).
+models_config_path = "config/models.local.json"
+
+# Inference provider. Supported values: "cpu", "cuda", "coreml", "armnn".
+provider = "cpu"
+
+# Number of threads for ONNX Runtime inference sessions.
+num_threads = 2
+
+# ---------------------------------------------------------------------------
+# CAPU (Vietnamese postprocessing) worker configuration
+# ---------------------------------------------------------------------------
+[capu]
+# Inference device for CAPU: "cpu" or "cuda".
+device = "cpu"
+
+# CAPU engine: "auto" uses PyTorch if available, "pytorch" forces it.
+engine = "auto"
+
+# Path to the Python binary used to launch the CAPU worker process.
+python_bin = "capu-worker/.venv/bin/python"
+
+# Directory containing the CAPU worker scripts.
+worker_dir = "capu-worker"
+
+# Timeout in seconds for a single CAPU postprocessing request.
+request_timeout_seconds = 240
+
+# CAPU model alias — must match an id in capu_models from the registry.
+# Default: "vibert-capu"
+# model_name = "vibert-capu"
+
+# Subdirectory inside the CAPU model directory containing the base model.
+# Default: "base_model"
+# base_model_name = "base_model"
+
+# Path to a packaged CAPU worker executable (for standalone releases).
+# When set, the Python sidecar is bypassed.
+# worker_exe = "runtime/capu/vit-stt-capu-worker-full-numpy/vit-stt-capu-worker-full-numpy"
+
+# ---------------------------------------------------------------------------
+# HTTP server configuration
+# ---------------------------------------------------------------------------
+[server]
+# Bind host for the HTTP service.
+host = "0.0.0.0"
+
+# Bind port for the HTTP service.
+port = 8080
+
+# Maximum audio duration in seconds accepted for transcription.
+# Default: 14400
+# max_audio_seconds = 14400
+
+# Maximum upload size in MB for multipart transcription requests.
+# This caps the total multipart body size, not the decoded audio length.
+# Oversized uploads are rejected with HTTP 413 and code "request_too_large"
+# before any decoding or model work happens.
+# Default: 256
+# max_upload_mb = 256
+
+# Owner name returned in the OpenAI-compatible /v1/models response.
+# Default: "vit-stt"
+# owned_by = "vit-stt"
+
+# Models to prewarm at server startup. Vietnamese is prewarmed by default.
+# English is lazy-loaded unless added here.
+# Default: [] (no warm-start)
+# warm_start_models = ["vit_stt_vi_v2"]
+
+# Timeout per model warmup in seconds. If a model takes longer, startup fails.
+# Default: 60
+# warm_start_timeout_seconds = 60
+
+# ---------------------------------------------------------------------------
+# Voice Activity Detection (VAD) configuration
+# ---------------------------------------------------------------------------
+[vad]
+# Enable VAD-based audio segmentation before transcription.
+enabled = true
+
+# VAD profile: selects the VAD engine.
+# "ten"   — TEN VAD (int8 quantized, current default, uses ten-vad.int8.onnx)
+# "custom" — uses the legacy VAD config fields (deprecated)
+profile = "ten"
+
+# VAD threshold (0.0–1.0). Higher values are more aggressive.
+threshold = 0.5
+
+# Minimum silence duration in seconds before a segment is considered ended.
+min_silence = 0.5
+
+# Minimum speech duration in seconds for a VAD segment to be kept.
+min_speech = 0.05
+
+# Maximum speech duration in seconds before a segment is force-ended.
+max_speech = 14.0

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.vit-stt.llama</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/llama-server</string>
+        <string>-hf</string>
+        <string>unsloth/gemma-4-E4B-it-GGUF</string>
+        <string>--temp</string>
+        <string>0.3</string>
+        <string>--top-p</string>
+        <string>0.95</string>
+        <string>--top-k</string>
+        <string>64</string>
+        <string>--reasoning</string>
+        <string>off</string>
+        <string>-c</string>
+        <string>32768</string>
+        <string>--host</string>
+        <string>0.0.0.0</string>
+        <string>--port</string>
+        <string>8001</string>
+        <string>--alias</string>
+        <string>Tom_tat</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/vit3/ai4pro/vit-stt</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>SessionCreate</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/vit3/ai4pro/vit-stt/logs/llama-server.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/vit3/ai4pro/vit-stt/logs/llama-server.err.log</string>
+
+    <key>UserName</key>
+    <string>vit3</string>
+</dict>
+</plist>

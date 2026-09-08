@@ -1,0 +1,18 @@
+{
+  "openvino": "2026.1.0-21367-63e31528c62-releases/2026/1",
+  "convert_ok": true,
+  "convert_ms": 2966.2995409962605,
+  "ir_xml": "models/capu/generated/dragonSwing--vibert-capu-openvino-ir/seq2labels.xml",
+  "available_devices": [
+    "CPU"
+  ],
+  "compile_ms": 635.9105419978732,
+  "first_ms": 22.39904199814191,
+  "runtime_ok": true,
+  "warm_summary": {
+    "mean_ms": 14.26016581026488,
+    "p50_ms": 13.4646669976064,
+    "min_ms": 12.557041998661589,
+    "max_ms": 45.1250420010183
+  }
+}

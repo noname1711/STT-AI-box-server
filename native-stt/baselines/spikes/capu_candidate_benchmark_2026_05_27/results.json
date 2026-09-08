@@ -1,0 +1,912 @@
+{
+  "generated_at": "2026-05-27T11:40:41+0700",
+  "iterations": 2,
+  "case_count": 12,
+  "cases": [
+    {
+      "id": "snippet/probe",
+      "input": "định nghĩa thế nào là ăn mặc đẹp",
+      "reference": "Định nghĩa thế nào là ăn mặc đẹp?",
+      "source": "locked_snippet"
+    },
+    {
+      "id": "snippet/long_vi_segment",
+      "input": "xin kính chào quý vị khán giả thưa quý vị chỉ ít phút nữa thì kỳ họp thứ nhất quốc hội khóa mười sáu sẽ được khai mạc trọng thể",
+      "reference": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+      "source": "locked_snippet"
+    },
+    {
+      "id": "snippet/legacy_expected_test_transcript",
+      "input": "rồi cũng hỗ trợ cho lâu lâu cũng cho gạo cho này kia",
+      "reference": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+      "source": "locked_snippet"
+    },
+    {
+      "id": "snippet/model_card_example",
+      "input": "theo đó thủ tướng dự kiến tiếp bộ trưởng nông nghiệp mỹ tom wilsack bộ trưởng thương mại mỹ gina raimondo bộ trưởng tài chính janet yellen gặp gỡ thượng nghị sĩ patrick leahy và một số nghị sĩ mỹ khác",
+      "reference": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+      "source": "locked_snippet"
+    },
+    {
+      "id": "asset/weanxinviec/30s",
+      "input": "dạ ờ định nghĩa thế nào là ăn mặc đẹp là anh vẫn em rồi sếp à em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình em cần phải tiếp tục nói vào quảng ngãi em à không đúng",
+      "reference": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng.",
+      "source": "previous_audio_derived_python_capu"
+    },
+    {
+      "id": "asset/weanxinviec/2m",
+      "input": "dạ ờ định nghĩa thế nào là ăn mặc đẹp là anh vẫn em rồi sếp à em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình em cần phải tiếp tục nói vào quảng ngãi em à không đúng rồi",
+      "reference": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng rồi.",
+      "source": "previous_audio_derived_python_capu"
+    },
+    {
+      "id": "asset/thoitiet936/30s",
+      "input": "quý vị đang theo dõi bản tin dự báo thời tiết của báo nhân dân thưa quý vị hôm nay khu vực bắc bộ nhiều nơi có mưa vùng núi và trung du có nơi mưa vừa mưa to kèm dông cần đề phòng tố lốc và gió giật mạnh trời nhiều mây nhiệt độ giảm nhẹ và có cảm giác lạnh nhiệt độ dao động từ hai",
+      "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố, lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao động từ 2.",
+      "source": "previous_audio_derived_python_capu"
+    },
+    {
+      "id": "asset/thoitiet936/2m",
+      "input": "quý vị đang theo dõi bản tin dự báo thời tiết của báo nhân dân thưa quý vị hôm nay khu vực bắc bộ nhiều nơi có mưa vùng núi và trung du có nơi mưa vừa mưa to kèm dông cần đề phòng tố lốc và gió giật mạnh trời nhiều mây nhiệt độ giảm nhẹ và có cảm giác lạnh nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ c nhìn chung thời tiết bắc bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm tiếp theo là khu vực bắc trung bộ từ thanh hóa trở vào cho đến huế do ảnh hưởng của không khí lạnh tăng cường khu vực này trong ngày hôm nay mây tăng nhiều nơi có mưa rải rác tập trung chủ yếu là ở khu vực ven biển lượng mưa nhìn chung là không lớn nhưng thời tiết trở nên dịu mát hơn so với những ngày trước nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ c khu vực duyên hải nam trung bộ từ đà nẵng đến khánh hòa trong ngày hôm nay trời nhiều mây hơn một số nơi có thể xuất hiện hiện tượng mưa nhẹ tuy nhiên thời gian mưa không kéo dài ban ngày nhiệt độ vẫn ở mức khá cao thời tiết tương đối dễ chịu nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ c tiếp theo là khu vực cao nguyên trung bộ hôm nay khu vực này tiếp",
+      "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp.",
+      "source": "previous_audio_derived_python_capu"
+    },
+    {
+      "id": "asset/thoitiet936/4m",
+      "input": "quý vị đang theo dõi bản tin dự báo thời tiết của báo nhân dân thưa quý vị hôm nay khu vực bắc bộ nhiều nơi có mưa vùng núi và trung du có nơi mưa vừa mưa to kèm dông cần đề phòng tố lốc và gió giật mạnh trời nhiều mây nhiệt độ giảm nhẹ và có cảm giác lạnh nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ c nhìn chung thời tiết bắc bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm tiếp theo là khu vực bắc trung bộ từ thanh hóa trở vào cho đến huế do ảnh hưởng của không khí lạnh tăng cường khu vực này trong ngày hôm nay mây tăng nhiều nơi có mưa rải rác tập trung chủ yếu là ở khu vực ven biển lượng mưa nhìn chung là không lớn nhưng thời tiết trở nên dịu mát hơn so với những ngày trước nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ c khu vực duyên hải nam trung bộ từ đà nẵng đến khánh hòa trong ngày hôm nay trời nhiều mây hơn một số nơi có thể xuất hiện hiện tượng mưa nhẹ tuy nhiên thời gian mưa không kéo dài ban ngày nhiệt độ vẫn ở mức khá cao thời tiết tương đối dễ chịu nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ c tiếp theo là khu vực cao nguyên trung bộ hôm nay khu vực này tiếp tục duy trì trạng thái tạnh ráo ngày có nắng nhưng mà không quá gay gắt thời tiết nhìn chung thuận lợi cho các hoạt động ngoài trời nhiệt độ dao động từ hai mươi chín cho đến ba mươi hai độ c cuối cùng là khu vực nam bộ trong ngày hôm nay thời tiết nam bộ tiếp tục ổn định với trời nắng từ sớm và kéo dài trong ngày chưa có dấu hiệu mưa trở lại nền nhiệt duy trì ở mức khá cao nhưng mà chưa xuất hiện nắng nóng trên diện rộng nhiệt độ dao động từ ba mươi hai cho đến ba mươi tư độ c chuyển sang thông tin thời tiết biển từ trưa và chiều nay tại vịnh bắc bộ và khu vực bắc biển đông bao gồm đặc khu hoàng sa gió chuyển hướng đông bắc mạnh dần lên cấp sáu giật cấp bảy cấp tám khiến biển động sóng biển cao từ một phẩy năm cho đến hai phẩy năm m riêng bắc biển đông biển động mạnh hơn với sóng cao từ ba đến năm mét tàu thuyền hoạt động trên các vùng biển này cần lưu ý theo dõi diễn biến thời tiết để đảm bảo an toàn vừa rồi là những thông tin thời tiết đáng chú ý trong ngày hôm nay và sau đây là dự báo thời tiết chi tiết ba ngày tiếp theo tại các tỉnh thành phố trên cả nước",
+      "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp tục duy trì trạng thái tạnh ráo, ngày có nắng nhưng mà không quá gay gắt. Thời tiết nhìn chung thuận lợi cho các hoạt động ngoài trời, nhiệt độ dao động từ hai mươi chín cho đến ba mươi hai độ C, cuối cùng là khu vực Nam Bộ. Trong ngày hôm nay, thời tiết Nam Bộ tiếp tục ổn định với trời nắng từ sớm và kéo dài trong ngày, chưa có dấu hiệu mưa trở lại. Nền nhiệt duy trì ở mức khá cao nhưng mà chưa xuất hiện nắng nóng trên diện rộng. Nhiệt độ dao động từ ba mươi hai cho đến ba mươi tư độ C. Chuyển sang thông tin thời tiết biển từ trưa và chiều nay tại Vịnh Bắc Bộ và khu vực Bắc Biển Đông, bao gồm đặc khu Hoàng Sa, gió chuyển hướng Đông Bắc mạnh dần lên cấp 6, giật cấp 7, cấp 8 khiến biển động, sóng biển cao từ 1 phẩy 5 cho đến 2 phẩy 5 m. riêng Bắc Biển Đông biển động mạnh hơn với sóng cao từ 3 đến 5 mét. Tàu thuyền hoạt động trên các vùng biển này cần lưu ý theo dõi diễn biến thời tiết để đảm bảo an toàn vừa rồi là những thông tin thời tiết đáng chú ý trong ngày hôm nay. Và sau đây là dự báo thời tiết chi tiết 3 ngày tiếp theo tại các tỉnh, thành phố trên cả nước.",
+      "source": "previous_audio_derived_python_capu"
+    },
+    {
+      "id": "asset/bomman/30s",
+      "input": "chào buổi tối nha i mới ra trường lương mười lăm triệu ok không anh ơi ui ngon vãi em mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có ờ đợt ngày xưa học i anh mới hát chớ lúc đầu anh còn phải đi học việc bắt đầu được hỗ trợ năm trăm nghìn tiền ăn trưa bắt đầu công ty trả cho gọi là part tim cho hai triệu trong công ty nâng lương lên bốn triệu sau anh lên được đỉnh cao của anh là sáu triệu rồi sau đó là anh nghỉ việc anh về là làm",
+      "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc, anh về là làm.",
+      "source": "previous_audio_derived_python_capu"
+    },
+    {
+      "id": "asset/bomman/2m",
+      "input": "chào buổi tối nha i mới ra trường lương mười lăm triệu ok không anh ơi ui ngon vãi em mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có ờ đợt ngày xưa học i anh mới hát chớ lúc đầu anh còn phải đi học việc bắt đầu được hỗ trợ năm trăm nghìn tiền ăn trưa bắt đầu công ty trả cho gọi là part tim cho hai triệu trong công ty nâng lương lên bốn triệu sau anh lên được đỉnh cao của anh là sáu triệu rồi sau đó là anh nghỉ việc anh về là làm năm trăm bro làm năm trăm bờ rốt thì mấy anh em thì anh dũng trả cho anh là lương là năm triệu cộng thêm lương cứng art on là hai triệu nữa đấy thế là tổng cộng là một tháng là hai triệu là cái tiền đôn nết ấy các bạn hiểu không ví dụ như kiểu là stodio được đôn một tháng được khoảng mười mấy triệu hai mươi triệu thì tôi sẽ được khoảng một đến hai triệu tiền thừa thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng năm năm triệu cộng hai sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi huế anh dũng có một cái tháng là anh dũng kết nối tình nghĩa anh em cho tất cả anh em đang trạm bt đi du lịch một phát có tôi đi huệ các bạn thế là anh ấy làm anh dũng cho một chuyến tàu tất cả mua vé tàu lên tàu đi huế chơi à tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết ừ tôi nhớ tại tôi nhớ đợt đấy tôi cắt cái giải gì cống hiến lắm anh em nhiệt tình lắm anh dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở huế bọn tôi đi tổng cộng đợt đấy là bảy người xuống đấy là chơi với đội anh em set go cộng đồng setga ở huế rồi các kiểu đi ba ngày hai đêm về là còn mua hẳn vé máy bay cho anh em bay về bằng viet sau chuyến đi đấy về là coi như tiêu hết sạch tiền đô nết đến tháng đấy tôi đéo có được thưởng nữa tôi được đúng năm triệu mà hồi đấy tôi đang thuê cái nhà hết mẹ hai triệu tiền nhà ôi giời ơi con mẹ sau khi trả xong tiền nhà tiền ăn uống tay tôi trắng tay luôn tôi tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả",
+      "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống, tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả.",
+      "source": "previous_audio_derived_python_capu"
+    },
+    {
+      "id": "asset/bomman/4m",
+      "input": "chào buổi tối nha i mới ra trường lương mười lăm triệu ok không anh ơi ui ngon vãi em mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có ờ đợt ngày xưa học i anh mới hát chớ lúc đầu anh còn phải đi học việc bắt đầu được hỗ trợ năm trăm nghìn tiền ăn trưa bắt đầu công ty trả cho gọi là part tim cho hai triệu trong công ty nâng lương lên bốn triệu sau anh lên được đỉnh cao của anh là sáu triệu rồi sau đó là anh nghỉ việc anh về là làm năm trăm bro làm năm trăm bờ rốt thì mấy anh em thì anh dũng trả cho anh là lương là năm triệu cộng thêm lương cứng art on là hai triệu nữa đấy thế là tổng cộng là một tháng là hai triệu là cái tiền đôn nết ấy các bạn hiểu không ví dụ như kiểu là stodio được đôn một tháng được khoảng mười mấy triệu hai mươi triệu thì tôi sẽ được khoảng một đến hai triệu tiền thừa thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng năm năm triệu cộng hai sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi huế anh dũng có một cái tháng là anh dũng kết nối tình nghĩa anh em cho tất cả anh em đang trạm bt đi du lịch một phát có tôi đi huệ các bạn thế là anh ấy làm anh dũng cho một chuyến tàu tất cả mua vé tàu lên tàu đi huế chơi à tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết ừ tôi nhớ tại tôi nhớ đợt đấy tôi cắt cái giải gì cống hiến lắm anh em nhiệt tình lắm anh dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở huế bọn tôi đi tổng cộng đợt đấy là bảy người xuống đấy là chơi với đội anh em set go cộng đồng setga ở huế rồi các kiểu đi ba ngày hai đêm về là còn mua hẳn vé máy bay cho anh em bay về bằng viet sau chuyến đi đấy về là coi như tiêu hết sạch tiền đô nết đến tháng đấy tôi đéo có được thưởng nữa tôi được đúng năm triệu mà hồi đấy tôi đang thuê cái nhà hết mẹ hai triệu tiền nhà ôi giời ơi con mẹ sau khi trả xong tiền nhà tiền ăn uống tay tôi trắng tay luôn tôi tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả mặt ra tôi bảo nào sống nhở làm nào để ở lại đất hà nội bây giờ tiền ăn thì đâu có ngày hôm đấy sao tôi cũng mặt dày tôi gọi điện lại cho cậu mợ tôi ở bên công ty cũ thôi cậu mợ là cho cháu vay năm triệu không hồi hồi xưa tôi thật các bạn là tôi cũng bình thường tôi cũng đâu dám vay anh em đâu tại cũng ngại hiểu không một số anh em thì người ta có tiền thật nhưng mà mình kiểu nhiều lúc không đến mức thì mình nhưng mà nhiều lúc nghĩ nó vay nó cũng nhục kiểu vay mà cảm giác nó trả được thì nghe nó còn hợp lý vay toàn vay kiểu đéo biết bao giờ sẽ trả cơ có những khoản vay tôi thật các bạn là bây giờ vay xong bảo lương năm triệu sau tháng nào làm nhiều được đôn nết nhiều thì được thưởng thêm hai triệu thằng nào đéo có việc thì đéo có được đôn nết thì rõ ràng là đéo có thưởng rồi thế bây giờ điếc lấy tiền đâu đi trả nợ bây giờ tại vì độc tiền lương đi trả kiểu tiền nhà xong đúng không bây giờ thuê phòng trọ hồi đấy tôi ở một mình cơ hồi đấy đầu đầu tiên là tôi ở với cả một ông nữa cũng làm ở bên năm trăm bút sau ông tướng kia thì ông ấy ông ấy tách ra ông ấy về ông ấy ông vẫn nằm năm trăm bros chứ nhưng mà nó lại về ở gia đình các bạn hiểu không có người yêu về gia đình ở với vợ sang ở với người yêu các kiểu thế là mình mình một phòng ôi dồi ôi tiền nhà tiền điện tiền nước cứ tầm khoảng hai triệu một mình mình trả trong phòng thì mình nhẽo về mãi mấy sau bắt đầu tôi mới tìm được một cái giải pháp đấy là mấy thằng bạn tôi nó bảo thôi mày bây giờ ở mình còn đéo thì mày sang đây ở với tao phòng tao bây giờ rộng mà bây giờ mình tao ở một mình thì cũng phí và cái thứ hai nữa là nó chịu cho tôi hồi đấy thằng bạn tôi nhiều tiền lắm các bạn ạ ừ mẹ nó còn thuê cả người đi làm hộ là các bạn hiểu nó như thế nào rồi đấy ngày xưa thằng bạn tôi nó ma giáo lắm suốt ngày thì chỉ thấy nó đi đánh bài thôi mang tiếng đi làm công ty nhưng mà nó còn bỏ cả tiền ra nó thuê người đi làm hộ thì tôi thấy là thằng này nó đỉnh cao sau đó thuê một",
+      "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả mặt ra. Tôi bảo nào sống nhở làm nào để ở lại đất Hà Nội bây giờ. Tiền ăn thì đâu có ngày hôm đấy sao tôi cũng mặt dày. Tôi gọi điện lại cho cậu mợ, tôi ở bên công ty cũ thôi. Cậu mợ là cho cháu vay 5 triệu không? Hồi hồi xưa tôi thật, các bạn là tôi cũng bình thường, tôi cũng đâu dám vay anh em đâu, tại cũng ngại. Hiểu không, Một số anh em thì người ta có tiền thật, nhưng mà mình kiểu nhiều lúc không đến mức thì mình nhưng mà nhiều lúc nghĩ nó vay nó cũng nhục. Kiểu vay mà cảm giác nó trả được thì nghe nó còn hợp lý, vay toàn vay kiểu đéo biết bao giờ sẽ trả cơ. Có những khoản vay tôi thật các bạn là bây giờ vay xong bảo lương 5 triệu sau tháng nào làm nhiều được đôn nết nhiều thì được thưởng thêm 2 triệu. Thằng nào đéo có việc thì đéo có được đôn nết thì rõ ràng là đéo có thưởng rồi. Thế bây giờ điếc lấy tiền đâu đi trả nợ bây giờ. Tại vì độc tiền lương đi trả kiểu tiền nhà xong đúng không? Bây giờ thuê phòng trọ, hồi đấy tôi ở một mình cơ. Hồi đấy đầu đầu tiên là tôi ở với cả một ông nữa, cũng làm ở bên Năm Trăm Bút. Sau ông tướng kia thì ông ấy. Ông ấy tách ra, ông ấy về ông ấy. Ông vẫn nằm năm trăm bros chứ. Nhưng mà nó lại về ở gia đình. Các bạn hiểu không? Có người yêu, về gia đình ở với vợ, sang ở với người yêu các kiểu. Thế là mình mình một phòng. Ôi dồi ôi, tiền nhà, tiền điện, tiền nước cứ tầm khoảng 2 triệu, một mình mình trả trong phòng thì mình nhẽo về. Mãi mấy sau, bắt đầu tôi mới tìm được một cái giải pháp, đấy là mấy thằng bạn tôi, nó bảo thôi mày bây giờ ở mình, còn đéo thì mày sang đây ở với tao. Phòng tao bây giờ rộng mà bây giờ mình tao ở một mình thì cũng phí. Và cái thứ hai nữa là nó chịu cho tôi. Hồi đấy thằng bạn tôi nhiều tiền lắm các bạn ạ. Ừ mẹ nó còn thuê cả người đi làm hộ là các bạn hiểu nó như thế nào rồi đấy. Ngày xưa thằng bạn tôi nó ma giáo lắm, suốt ngày thì chỉ thấy nó đi đánh bài thôi. Mang tiếng đi làm công ty nhưng mà nó còn bỏ cả tiền ra nó thuê người đi làm hộ thì tôi thấy là thằng này nó đỉnh cao sau đó thuê một.",
+      "source": "previous_audio_derived_python_capu"
+    }
+  ],
+  "models": [
+    {
+      "key": "vibert-capu-current",
+      "repo_id": "dragonSwing/vibert-capu",
+      "kind": "gec",
+      "description": "Current production CAPU baseline, ViBERT Seq2Labels.",
+      "local_dir": "/Users/leakless/code/vit-stt/models/capu/model/dragonSwing--vibert-capu",
+      "model_size_mb": 462.613551,
+      "init_ms": 1422.6219590000255,
+      "first_inference_ms": 36.963209000532515,
+      "first_output": "Định nghĩa thế nào là ăn mặc đẹp?",
+      "overall_timing": {
+        "mean_ms": 190.7582689583099,
+        "p50_ms": 79.12274999944202,
+        "min_ms": 27.047374998801388,
+        "max_ms": 746.470332998797
+      },
+      "case_count": 12,
+      "exact_match_count": 12,
+      "exact_match_rate": 1.0,
+      "punctuation_exact_match_count": 12,
+      "punctuation_exact_match_rate": 1.0,
+      "mean_char_edit_rate": 0.0,
+      "cases": [
+        {
+          "id": "snippet/probe",
+          "source": "locked_snippet",
+          "input_chars": 32,
+          "input_words": 8,
+          "reference": "Định nghĩa thế nào là ăn mặc đẹp?",
+          "output": "Định nghĩa thế nào là ăn mặc đẹp?",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": "?",
+          "punctuation_output": "?",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 34.43802049969236,
+            "p50_ms": 34.50254099880112,
+            "min_ms": 34.37350000058359,
+            "max_ms": 34.50254099880112
+          }
+        },
+        {
+          "id": "snippet/long_vi_segment",
+          "source": "locked_snippet",
+          "input_chars": 127,
+          "input_words": 30,
+          "reference": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+          "output": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ".,.",
+          "punctuation_output": ".,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 53.227812501063454,
+            "p50_ms": 55.39275000046473,
+            "min_ms": 51.06287500166218,
+            "max_ms": 55.39275000046473
+          }
+        },
+        {
+          "id": "snippet/legacy_expected_test_transcript",
+          "source": "locked_snippet",
+          "input_chars": 52,
+          "input_words": 13,
+          "reference": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+          "output": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ",.",
+          "punctuation_output": ",.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 27.060083499236498,
+            "p50_ms": 27.072791999671608,
+            "min_ms": 27.047374998801388,
+            "max_ms": 27.072791999671608
+          }
+        },
+        {
+          "id": "snippet/model_card_example",
+          "source": "locked_snippet",
+          "input_chars": 200,
+          "input_words": 41,
+          "reference": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+          "output": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ",,,,.",
+          "punctuation_output": ",,,,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 56.21747900113405,
+            "p50_ms": 57.48245800168661,
+            "min_ms": 54.952500000581495,
+            "max_ms": 57.48245800168661
+          }
+        },
+        {
+          "id": "asset/weanxinviec/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 197,
+          "input_words": 49,
+          "reference": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng.",
+          "output": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ",,?,....",
+          "punctuation_output": ",,?,....",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 62.1552704997157,
+            "p50_ms": 62.45225000020582,
+            "min_ms": 61.858290999225574,
+            "max_ms": 62.45225000020582
+          }
+        },
+        {
+          "id": "asset/weanxinviec/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 201,
+          "input_words": 50,
+          "reference": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng rồi.",
+          "output": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng rồi.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ",,?,....",
+          "punctuation_output": ",,?,....",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 69.11700000000565,
+            "p50_ms": 69.18908400075452,
+            "min_ms": 69.04491599925677,
+            "max_ms": 69.18908400075452
+          }
+        },
+        {
+          "id": "asset/thoitiet936/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 281,
+          "input_words": 68,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố, lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao động từ 2.",
+          "output": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố, lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao động từ 2.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ".,,,,,.,,.",
+          "punctuation_output": ".,,,,,.,,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 79.9834789995657,
+            "p50_ms": 80.84420799968939,
+            "min_ms": 79.12274999944202,
+            "max_ms": 80.84420799968939
+          }
+        },
+        {
+          "id": "asset/thoitiet936/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 1143,
+          "input_words": 267,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp.",
+          "output": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ".,,,,.,...,,,.,..,,,,,..,.",
+          "punctuation_output": ".,,,,.,...,,,.,..,,,,,..,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 250.03724949965545,
+            "p50_ms": 250.49008299902198,
+            "min_ms": 249.5844160002889,
+            "max_ms": 250.49008299902198
+          }
+        },
+        {
+          "id": "asset/thoitiet936/4m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 2220,
+          "input_words": 514,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp tục duy trì trạng thái tạnh ráo, ngày có nắng nhưng mà không quá gay gắt. Thời tiết nhìn chung thuận lợi cho các hoạt động ngoài trời, nhiệt độ dao động từ hai mươi chín cho đến ba mươi hai độ C, cuối cùng là khu vực Nam Bộ. Trong ngày hôm nay, thời tiết Nam Bộ tiếp tục ổn định với trời nắng từ sớm và kéo dài trong ngày, chưa có dấu hiệu mưa trở lại. Nền nhiệt duy trì ở mức khá cao nhưng mà chưa xuất hiện nắng nóng trên diện rộng. Nhiệt độ dao động từ ba mươi hai cho đến ba mươi tư độ C. Chuyển sang thông tin thời tiết biển từ trưa và chiều nay tại Vịnh Bắc Bộ và khu vực Bắc Biển Đông, bao gồm đặc khu Hoàng Sa, gió chuyển hướng Đông Bắc mạnh dần lên cấp 6, giật cấp 7, cấp 8 khiến biển động, sóng biển cao từ 1 phẩy 5 cho đến 2 phẩy 5 m. riêng Bắc Biển Đông biển động mạnh hơn với sóng cao từ 3 đến 5 mét. Tàu thuyền hoạt động trên các vùng biển này cần lưu ý theo dõi diễn biến thời tiết để đảm bảo an toàn vừa rồi là những thông tin thời tiết đáng chú ý trong ngày hôm nay. Và sau đây là dự báo thời tiết chi tiết 3 ngày tiếp theo tại các tỉnh, thành phố trên cả nước.",
+          "output": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp tục duy trì trạng thái tạnh ráo, ngày có nắng nhưng mà không quá gay gắt. Thời tiết nhìn chung thuận lợi cho các hoạt động ngoài trời, nhiệt độ dao động từ hai mươi chín cho đến ba mươi hai độ C, cuối cùng là khu vực Nam Bộ. Trong ngày hôm nay, thời tiết Nam Bộ tiếp tục ổn định với trời nắng từ sớm và kéo dài trong ngày, chưa có dấu hiệu mưa trở lại. Nền nhiệt duy trì ở mức khá cao nhưng mà chưa xuất hiện nắng nóng trên diện rộng. Nhiệt độ dao động từ ba mươi hai cho đến ba mươi tư độ C. Chuyển sang thông tin thời tiết biển từ trưa và chiều nay tại Vịnh Bắc Bộ và khu vực Bắc Biển Đông, bao gồm đặc khu Hoàng Sa, gió chuyển hướng Đông Bắc mạnh dần lên cấp 6, giật cấp 7, cấp 8 khiến biển động, sóng biển cao từ 1 phẩy 5 cho đến 2 phẩy 5 m. riêng Bắc Biển Đông biển động mạnh hơn với sóng cao từ 3 đến 5 mét. Tàu thuyền hoạt động trên các vùng biển này cần lưu ý theo dõi diễn biến thời tiết để đảm bảo an toàn vừa rồi là những thông tin thời tiết đáng chú ý trong ngày hôm nay. Và sau đây là dự báo thời tiết chi tiết 3 ngày tiếp theo tại các tỉnh, thành phố trên cả nước.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ".,,,,.,...,,,.,..,,,,,..,,.,,.,,...,,,,,...,.",
+          "punctuation_output": ".,,,,.,...,,,.,..,,,,,..,,.,,.,,...,,,,,...,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 397.3013955001079,
+            "p50_ms": 402.2264579998591,
+            "min_ms": 392.3763330003567,
+            "max_ms": 402.2264579998591
+          }
+        },
+        {
+          "id": "asset/bomman/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 485,
+          "input_words": 114,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc, anh về là làm.",
+          "output": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc, anh về là làm.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": "..?..,...,,,,.,.",
+          "punctuation_output": "..?..,...,,,,.,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 122.64593750023778,
+            "p50_ms": 122.91795800047112,
+            "min_ms": 122.37391700000444,
+            "max_ms": 122.91795800047112
+          }
+        },
+        {
+          "id": "asset/bomman/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 1947,
+          "input_words": 462,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống, tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả.",
+          "output": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống, tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": "..?..,...,,,,..,.,..,?,.,.,,,,,.........,.,.....,,,.,.",
+          "punctuation_output": "..?..,...,,,,..,.,..,?,.,.,,,,,.........,.,.....,,,.,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 406.9752499999595,
+            "p50_ms": 407.15083299983235,
+            "min_ms": 406.79966700008663,
+            "max_ms": 407.15083299983235
+          }
+        },
+        {
+          "id": "asset/bomman/4m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 3895,
+          "input_words": 930,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả mặt ra. Tôi bảo nào sống nhở làm nào để ở lại đất Hà Nội bây giờ. Tiền ăn thì đâu có ngày hôm đấy sao tôi cũng mặt dày. Tôi gọi điện lại cho cậu mợ, tôi ở bên công ty cũ thôi. Cậu mợ là cho cháu vay 5 triệu không? Hồi hồi xưa tôi thật, các bạn là tôi cũng bình thường, tôi cũng đâu dám vay anh em đâu, tại cũng ngại. Hiểu không, Một số anh em thì người ta có tiền thật, nhưng mà mình kiểu nhiều lúc không đến mức thì mình nhưng mà nhiều lúc nghĩ nó vay nó cũng nhục. Kiểu vay mà cảm giác nó trả được thì nghe nó còn hợp lý, vay toàn vay kiểu đéo biết bao giờ sẽ trả cơ. Có những khoản vay tôi thật các bạn là bây giờ vay xong bảo lương 5 triệu sau tháng nào làm nhiều được đôn nết nhiều thì được thưởng thêm 2 triệu. Thằng nào đéo có việc thì đéo có được đôn nết thì rõ ràng là đéo có thưởng rồi. Thế bây giờ điếc lấy tiền đâu đi trả nợ bây giờ. Tại vì độc tiền lương đi trả kiểu tiền nhà xong đúng không? Bây giờ thuê phòng trọ, hồi đấy tôi ở một mình cơ. Hồi đấy đầu đầu tiên là tôi ở với cả một ông nữa, cũng làm ở bên Năm Trăm Bút. Sau ông tướng kia thì ông ấy. Ông ấy tách ra, ông ấy về ông ấy. Ông vẫn nằm năm trăm bros chứ. Nhưng mà nó lại về ở gia đình. Các bạn hiểu không? Có người yêu, về gia đình ở với vợ, sang ở với người yêu các kiểu. Thế là mình mình một phòng. Ôi dồi ôi, tiền nhà, tiền điện, tiền nước cứ tầm khoảng 2 triệu, một mình mình trả trong phòng thì mình nhẽo về. Mãi mấy sau, bắt đầu tôi mới tìm được một cái giải pháp, đấy là mấy thằng bạn tôi, nó bảo thôi mày bây giờ ở mình, còn đéo thì mày sang đây ở với tao. Phòng tao bây giờ rộng mà bây giờ mình tao ở một mình thì cũng phí. Và cái thứ hai nữa là nó chịu cho tôi. Hồi đấy thằng bạn tôi nhiều tiền lắm các bạn ạ. Ừ mẹ nó còn thuê cả người đi làm hộ là các bạn hiểu nó như thế nào rồi đấy. Ngày xưa thằng bạn tôi nó ma giáo lắm, suốt ngày thì chỉ thấy nó đi đánh bài thôi. Mang tiếng đi làm công ty nhưng mà nó còn bỏ cả tiền ra nó thuê người đi làm hộ thì tôi thấy là thằng này nó đỉnh cao sau đó thuê một.",
+          "output": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả mặt ra. Tôi bảo nào sống nhở làm nào để ở lại đất Hà Nội bây giờ. Tiền ăn thì đâu có ngày hôm đấy sao tôi cũng mặt dày. Tôi gọi điện lại cho cậu mợ, tôi ở bên công ty cũ thôi. Cậu mợ là cho cháu vay 5 triệu không? Hồi hồi xưa tôi thật, các bạn là tôi cũng bình thường, tôi cũng đâu dám vay anh em đâu, tại cũng ngại. Hiểu không, Một số anh em thì người ta có tiền thật, nhưng mà mình kiểu nhiều lúc không đến mức thì mình nhưng mà nhiều lúc nghĩ nó vay nó cũng nhục. Kiểu vay mà cảm giác nó trả được thì nghe nó còn hợp lý, vay toàn vay kiểu đéo biết bao giờ sẽ trả cơ. Có những khoản vay tôi thật các bạn là bây giờ vay xong bảo lương 5 triệu sau tháng nào làm nhiều được đôn nết nhiều thì được thưởng thêm 2 triệu. Thằng nào đéo có việc thì đéo có được đôn nết thì rõ ràng là đéo có thưởng rồi. Thế bây giờ điếc lấy tiền đâu đi trả nợ bây giờ. Tại vì độc tiền lương đi trả kiểu tiền nhà xong đúng không? Bây giờ thuê phòng trọ, hồi đấy tôi ở một mình cơ. Hồi đấy đầu đầu tiên là tôi ở với cả một ông nữa, cũng làm ở bên Năm Trăm Bút. Sau ông tướng kia thì ông ấy. Ông ấy tách ra, ông ấy về ông ấy. Ông vẫn nằm năm trăm bros chứ. Nhưng mà nó lại về ở gia đình. Các bạn hiểu không? Có người yêu, về gia đình ở với vợ, sang ở với người yêu các kiểu. Thế là mình mình một phòng. Ôi dồi ôi, tiền nhà, tiền điện, tiền nước cứ tầm khoảng 2 triệu, một mình mình trả trong phòng thì mình nhẽo về. Mãi mấy sau, bắt đầu tôi mới tìm được một cái giải pháp, đấy là mấy thằng bạn tôi, nó bảo thôi mày bây giờ ở mình, còn đéo thì mày sang đây ở với tao. Phòng tao bây giờ rộng mà bây giờ mình tao ở một mình thì cũng phí. Và cái thứ hai nữa là nó chịu cho tôi. Hồi đấy thằng bạn tôi nhiều tiền lắm các bạn ạ. Ừ mẹ nó còn thuê cả người đi làm hộ là các bạn hiểu nó như thế nào rồi đấy. Ngày xưa thằng bạn tôi nó ma giáo lắm, suốt ngày thì chỉ thấy nó đi đánh bài thôi. Mang tiếng đi làm công ty nhưng mà nó còn bỏ cả tiền ra nó thuê người đi làm hộ thì tôi thấy là thằng này nó đỉnh cao sau đó thuê một.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": "..?..,...,,,,..,.,..,?,.,.,,,,,.........,.,.....,,.,...,.?,,,.,,.,....?,.,..,...?,,..,,,,.,,,,.....,..",
+          "punctuation_output": "..?..,...,,,,..,.,..,?,.,.,,,,,.........,.,.....,,.,...,.?,,,.,,.,....?,.,..,...?,,..,,,,.,,,,.....,..",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 729.9402499993448,
+            "p50_ms": 746.470332998797,
+            "min_ms": 713.4101669998927,
+            "max_ms": 746.470332998797
+          }
+        }
+      ]
+    },
+    {
+      "key": "xlm-roberta-capu",
+      "repo_id": "dragonSwing/xlm-roberta-capu",
+      "kind": "gec",
+      "description": "dragonSwing XLM-RoBERTa Seq2Labels CAPU candidate.",
+      "local_dir": "/Users/leakless/code/vit-stt/models/capu/benchmark-candidates/dragonSwing--xlm-roberta-capu",
+      "model_size_mb": 1113.370837,
+      "init_ms": 4673.433624999234,
+      "first_inference_ms": 41.846000000077765,
+      "first_output": "Định nghĩa: Thế nào là ăn mặc đẹp?",
+      "overall_timing": {
+        "mean_ms": 169.4840103750721,
+        "p50_ms": 78.53199999954086,
+        "min_ms": 24.726750001718756,
+        "max_ms": 626.9358750014362
+      },
+      "case_count": 12,
+      "exact_match_count": 2,
+      "exact_match_rate": 0.16666666666666666,
+      "punctuation_exact_match_count": 3,
+      "punctuation_exact_match_rate": 0.25,
+      "mean_char_edit_rate": 0.024535264366351617,
+      "cases": [
+        {
+          "id": "snippet/probe",
+          "source": "locked_snippet",
+          "input_chars": 32,
+          "input_words": 8,
+          "reference": "Định nghĩa thế nào là ăn mặc đẹp?",
+          "output": "Định nghĩa: Thế nào là ăn mặc đẹp?",
+          "exact_match": false,
+          "char_edit_distance": 2,
+          "char_edit_rate": 0.06060606060606061,
+          "punctuation_reference": "?",
+          "punctuation_output": ":?",
+          "punctuation_exact_match": false,
+          "uppercase_delta": 1,
+          "timing": {
+            "mean_ms": 41.09237500051677,
+            "p50_ms": 41.11808300149278,
+            "min_ms": 41.06666699954076,
+            "max_ms": 41.11808300149278
+          }
+        },
+        {
+          "id": "snippet/long_vi_segment",
+          "source": "locked_snippet",
+          "input_chars": 127,
+          "input_words": 30,
+          "reference": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+          "output": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì kỳ họp thứ nhất Quốc hội khóa mười sáu sẽ được khai mạc trọng thể.",
+          "exact_match": false,
+          "char_edit_distance": 2,
+          "char_edit_rate": 0.015384615384615385,
+          "punctuation_reference": ".,.",
+          "punctuation_output": ".,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": -2,
+          "timing": {
+            "mean_ms": 32.71793699968839,
+            "p50_ms": 32.75741600009496,
+            "min_ms": 32.67845799928182,
+            "max_ms": 32.75741600009496
+          }
+        },
+        {
+          "id": "snippet/legacy_expected_test_transcript",
+          "source": "locked_snippet",
+          "input_chars": 52,
+          "input_words": 13,
+          "reference": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+          "output": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ",.",
+          "punctuation_output": ",.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 24.80747900062852,
+            "p50_ms": 24.88820799953828,
+            "min_ms": 24.726750001718756,
+            "max_ms": 24.88820799953828
+          }
+        },
+        {
+          "id": "snippet/model_card_example",
+          "source": "locked_snippet",
+          "input_chars": 200,
+          "input_words": 41,
+          "reference": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+          "output": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ",,,,.",
+          "punctuation_output": ",,,,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 55.444458500460314,
+            "p50_ms": 55.74045800130989,
+            "min_ms": 55.14845899961074,
+            "max_ms": 55.74045800130989
+          }
+        },
+        {
+          "id": "asset/weanxinviec/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 197,
+          "input_words": 49,
+          "reference": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng.",
+          "output": "Dạ ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi sếp à, em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à, không đúng.",
+          "exact_match": false,
+          "char_edit_distance": 6,
+          "char_edit_rate": 0.02926829268292683,
+          "punctuation_reference": ",,?,....",
+          "punctuation_output": ",?,.,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -2,
+          "timing": {
+            "mean_ms": 62.969958498797496,
+            "p50_ms": 63.270666998505476,
+            "min_ms": 62.669249999089516,
+            "max_ms": 63.270666998505476
+          }
+        },
+        {
+          "id": "asset/weanxinviec/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 201,
+          "input_words": 50,
+          "reference": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng rồi.",
+          "output": "Dạ ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi sếp à, em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à, không đúng rồi.",
+          "exact_match": false,
+          "char_edit_distance": 6,
+          "char_edit_rate": 0.028708133971291867,
+          "punctuation_reference": ",,?,....",
+          "punctuation_output": ",?,.,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -2,
+          "timing": {
+            "mean_ms": 46.099666499685554,
+            "p50_ms": 46.35454199888045,
+            "min_ms": 45.84479100049066,
+            "max_ms": 46.35454199888045
+          }
+        },
+        {
+          "id": "asset/thoitiet936/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 281,
+          "input_words": 68,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố, lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao động từ 2.",
+          "output": "Quý vị đang theo dõi bản tin dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ 2.",
+          "exact_match": false,
+          "char_edit_distance": 4,
+          "char_edit_rate": 0.01384083044982699,
+          "punctuation_reference": ".,,,,,.,,.",
+          "punctuation_output": ".,,,,.,..",
+          "punctuation_exact_match": false,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 78.87477050007874,
+            "p50_ms": 79.21754100061662,
+            "min_ms": 78.53199999954086,
+            "max_ms": 79.21754100061662
+          }
+        },
+        {
+          "id": "asset/thoitiet936/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 1143,
+          "input_words": 267,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp.",
+          "output": "Quý vị đang theo dõi bản tin dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông. Cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm, tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước, nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay khu vực này tiếp.",
+          "exact_match": false,
+          "char_edit_distance": 10,
+          "char_edit_rate": 0.00855431993156544,
+          "punctuation_reference": ".,,,,.,...,,,.,..,,,,,..,.",
+          "punctuation_output": ".,,,..,,.,,,,.,,.,,,,,...",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -3,
+          "timing": {
+            "mean_ms": 226.59085450140992,
+            "p50_ms": 226.66033400128072,
+            "min_ms": 226.52137500153913,
+            "max_ms": 226.66033400128072
+          }
+        },
+        {
+          "id": "asset/thoitiet936/4m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 2220,
+          "input_words": 514,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp tục duy trì trạng thái tạnh ráo, ngày có nắng nhưng mà không quá gay gắt. Thời tiết nhìn chung thuận lợi cho các hoạt động ngoài trời, nhiệt độ dao động từ hai mươi chín cho đến ba mươi hai độ C, cuối cùng là khu vực Nam Bộ. Trong ngày hôm nay, thời tiết Nam Bộ tiếp tục ổn định với trời nắng từ sớm và kéo dài trong ngày, chưa có dấu hiệu mưa trở lại. Nền nhiệt duy trì ở mức khá cao nhưng mà chưa xuất hiện nắng nóng trên diện rộng. Nhiệt độ dao động từ ba mươi hai cho đến ba mươi tư độ C. Chuyển sang thông tin thời tiết biển từ trưa và chiều nay tại Vịnh Bắc Bộ và khu vực Bắc Biển Đông, bao gồm đặc khu Hoàng Sa, gió chuyển hướng Đông Bắc mạnh dần lên cấp 6, giật cấp 7, cấp 8 khiến biển động, sóng biển cao từ 1 phẩy 5 cho đến 2 phẩy 5 m. riêng Bắc Biển Đông biển động mạnh hơn với sóng cao từ 3 đến 5 mét. Tàu thuyền hoạt động trên các vùng biển này cần lưu ý theo dõi diễn biến thời tiết để đảm bảo an toàn vừa rồi là những thông tin thời tiết đáng chú ý trong ngày hôm nay. Và sau đây là dự báo thời tiết chi tiết 3 ngày tiếp theo tại các tỉnh, thành phố trên cả nước.",
+          "output": "Quý vị đang theo dõi bản tin dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông. Cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm, tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước, nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ, Hôm nay khu vực này tiếp tục duy trì trạng thái tạnh ráo, ngày có nắng nhưng mà không quá gay gắt. Thời tiết nhìn chung thuận lợi cho các hoạt động ngoài trời, nhiệt độ dao động từ hai mươi chín cho đến ba mươi hai độ C, cuối cùng là khu vực Nam Bộ. Trong ngày hôm nay, thời tiết Nam Bộ tiếp tục ổn định với trời nắng từ sớm và kéo dài trong ngày, chưa có dấu hiệu mưa trở lại. Nền nhiệt duy trì ở mức khá cao nhưng mà chưa xuất hiện nắng nóng trên diện rộng. Nhiệt độ dao động từ ba mươi hai cho đến ba mươi tư độ C. Chuyển sang thông tin thời tiết biển từ trưa và chiều nay tại Vịnh Bắc Bộ và khu vực Bắc Biển Đông, bao gồm đặc khu Hoàng Sa gió chuyển hướng Đông Bắc mạnh dần lên cấp 6, giật cấp 7, cấp 8 khiến biển động, sóng biển cao từ 1 phẩy 5 cho đến 2 phẩy 5 m. Riêng Bắc Biển Đông biển động mạnh hơn với sóng cao từ 3 đến 5 mét. Tàu thuyền hoạt động trên các vùng biển này cần lưu ý theo dõi diễn biến thời tiết để đảm bảo an toàn vừa rồi là những thông tin thời tiết đáng chú ý trong ngày hôm nay. Và sau đây là dự báo thời tiết chi tiết 3 ngày tiếp theo tại các tỉnh thành phố trên cả nước.",
+          "exact_match": false,
+          "char_edit_distance": 14,
+          "char_edit_rate": 0.006230529595015576,
+          "punctuation_reference": ".,,,,.,...,,,.,..,,,,,..,,.,,.,,...,,,,,...,.",
+          "punctuation_output": ".,,,..,,.,,,,.,,.,,,,,.,,.,,.,,...,,,,....",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -2,
+          "timing": {
+            "mean_ms": 375.23029149997456,
+            "p50_ms": 379.0101249996951,
+            "min_ms": 371.450458000254,
+            "max_ms": 379.0101249996951
+          }
+        },
+        {
+          "id": "asset/bomman/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 485,
+          "input_words": 114,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc, anh về là làm.",
+          "output": "Chào buổi tối nha, I mới ra trường lương mười lăm triệu ok không anh ơi. Ui ngon vãi em mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có ờ, đợt ngày xưa học I anh mới H chớ lúc đầu anh còn phải đi học việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa, bắt đầu công ty trả cho gọi là part tim cho 2 triệu, trong công ty nâng lương lên 4 triệu. Sau anh lên được đỉnh cao của anh là 6 triệu rồi sau đó là anh nghỉ việc, anh về là làm.",
+          "exact_match": false,
+          "char_edit_distance": 27,
+          "char_edit_rate": 0.05476673427991886,
+          "punctuation_reference": "..?..,...,,,,.,.",
+          "punctuation_output": ",.,,,.,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -6,
+          "timing": {
+            "mean_ms": 120.74414549988433,
+            "p50_ms": 120.75570799970592,
+            "min_ms": 120.73258300006273,
+            "max_ms": 120.75570799970592
+          }
+        },
+        {
+          "id": "asset/bomman/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 1947,
+          "input_words": 462,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống, tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả.",
+          "output": "Chào buổi tối nha, I mới ra trường lương mười lăm triệu ok không anh ơi. Ui ngon vãi em mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có ờ, đợt ngày xưa học I anh mới H chớ lúc đầu anh còn phải đi học việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa, bắt đầu công ty trả cho gọi là part tim cho 2 triệu, trong công ty nâng lương lên 4 triệu. Sau anh lên được đỉnh cao của anh là 6 triệu rồi sau đó là anh nghỉ việc, anh về là làm 5 trăm bro, làm năm trăm b rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng, là hai triệu, là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng một đến hai triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng năm năm triệu cộng hai. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có 1 cái tháng là anh Dũng kết nối tình nghĩa anh em cho tất cả anh em đang trạm BT đi du lịch 1 phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu lên tàu đi Huế chơi à. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ, tôi nhớ. Tại tôi nhớ đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là 7 người, xuống đấy là chơi với đội anh em set go, cộng đồng setga ở Huế rồi các kiểu. Đi 3 ngày 2 đêm về là còn mua hẳn vé máy bay cho anh em bay về bằng viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô nết. Đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống, tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả.",
+          "exact_match": false,
+          "char_edit_distance": 85,
+          "char_edit_rate": 0.043191056910569105,
+          "punctuation_reference": "..?..,...,,,,..,.,..,?,.,.,,,,,.........,.,.....,,,.,.",
+          "punctuation_output": ",.,,,.,,.,,,?,..,,,..,....,,.....,,,.,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -16,
+          "timing": {
+            "mean_ms": 344.13183349988685,
+            "p50_ms": 349.7588749996794,
+            "min_ms": 338.5047920000943,
+            "max_ms": 349.7588749996794
+          }
+        },
+        {
+          "id": "asset/bomman/4m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 3895,
+          "input_words": 930,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả mặt ra. Tôi bảo nào sống nhở làm nào để ở lại đất Hà Nội bây giờ. Tiền ăn thì đâu có ngày hôm đấy sao tôi cũng mặt dày. Tôi gọi điện lại cho cậu mợ, tôi ở bên công ty cũ thôi. Cậu mợ là cho cháu vay 5 triệu không? Hồi hồi xưa tôi thật, các bạn là tôi cũng bình thường, tôi cũng đâu dám vay anh em đâu, tại cũng ngại. Hiểu không, Một số anh em thì người ta có tiền thật, nhưng mà mình kiểu nhiều lúc không đến mức thì mình nhưng mà nhiều lúc nghĩ nó vay nó cũng nhục. Kiểu vay mà cảm giác nó trả được thì nghe nó còn hợp lý, vay toàn vay kiểu đéo biết bao giờ sẽ trả cơ. Có những khoản vay tôi thật các bạn là bây giờ vay xong bảo lương 5 triệu sau tháng nào làm nhiều được đôn nết nhiều thì được thưởng thêm 2 triệu. Thằng nào đéo có việc thì đéo có được đôn nết thì rõ ràng là đéo có thưởng rồi. Thế bây giờ điếc lấy tiền đâu đi trả nợ bây giờ. Tại vì độc tiền lương đi trả kiểu tiền nhà xong đúng không? Bây giờ thuê phòng trọ, hồi đấy tôi ở một mình cơ. Hồi đấy đầu đầu tiên là tôi ở với cả một ông nữa, cũng làm ở bên Năm Trăm Bút. Sau ông tướng kia thì ông ấy. Ông ấy tách ra, ông ấy về ông ấy. Ông vẫn nằm năm trăm bros chứ. Nhưng mà nó lại về ở gia đình. Các bạn hiểu không? Có người yêu, về gia đình ở với vợ, sang ở với người yêu các kiểu. Thế là mình mình một phòng. Ôi dồi ôi, tiền nhà, tiền điện, tiền nước cứ tầm khoảng 2 triệu, một mình mình trả trong phòng thì mình nhẽo về. Mãi mấy sau, bắt đầu tôi mới tìm được một cái giải pháp, đấy là mấy thằng bạn tôi, nó bảo thôi mày bây giờ ở mình, còn đéo thì mày sang đây ở với tao. Phòng tao bây giờ rộng mà bây giờ mình tao ở một mình thì cũng phí. Và cái thứ hai nữa là nó chịu cho tôi. Hồi đấy thằng bạn tôi nhiều tiền lắm các bạn ạ. Ừ mẹ nó còn thuê cả người đi làm hộ là các bạn hiểu nó như thế nào rồi đấy. Ngày xưa thằng bạn tôi nó ma giáo lắm, suốt ngày thì chỉ thấy nó đi đánh bài thôi. Mang tiếng đi làm công ty nhưng mà nó còn bỏ cả tiền ra nó thuê người đi làm hộ thì tôi thấy là thằng này nó đỉnh cao sau đó thuê một.",
+          "output": "Chào buổi tối nha, I mới ra trường lương mười lăm triệu ok không anh ơi. Ui ngon vãi em mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có ờ, đợt ngày xưa học I anh mới H chớ lúc đầu anh còn phải đi học việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa, bắt đầu công ty trả cho gọi là part tim cho 2 triệu, trong công ty nâng lương lên 4 triệu. Sau anh lên được đỉnh cao của anh là 6 triệu rồi sau đó là anh nghỉ việc, anh về là làm 5 trăm bro, làm năm trăm b rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng, là hai triệu, là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng một đến hai triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng năm năm triệu cộng hai. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có 1 cái tháng là anh Dũng kết nối tình nghĩa anh em cho tất cả anh em đang trạm BT đi du lịch 1 phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu lên tàu đi Huế chơi à. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ, tôi nhớ. Tại tôi nhớ đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là 7 người, xuống đấy là chơi với đội anh em set go, cộng đồng setga ở Huế rồi các kiểu. Đi 3 ngày 2 đêm về là còn mua hẳn vé máy bay cho anh em bay về bằng viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô nết. Đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống, tay tôi trắng tay luôn. Tôi tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả mặt ra. Tôi bảo nào sống nhở làm nào để ở lại đất Hà Nội bây giờ. Tiền ăn thì đâu có ngày hôm đấy sao? Tôi cũng mặt dày. Tôi gọi điện lại cho cậu mợ tôi ở bên công ty cũ thôi. Cậu mợ là cho cháu vay 5 triệu không? Hồi hồi xưa tôi thật các bạn là tôi cũng bình thường, tôi cũng đâu dám vay anh em đâu, tại cũng ngại hiểu không? Một số anh em thì người ta có tiền thật nhưng mà mình kiểu nhiều lúc không đến mức thì mình nhưng mà nhiều lúc nghĩ nó vay nó cũng nhục, kiểu vay mà cảm giác nó trả được thì nghe nó còn hợp lý, vay toàn vay kiểu đéo biết bao giờ sẽ trả cơ. Có những khoản vay tôi thật các bạn là bây giờ vay xong bảo lương 5 triệu, sau tháng nào làm nhiều được đôn nết nhiều thì được thưởng thêm 2 triệu. Thằng nào đéo có việc thì đéo có được đôn nết thì rõ ràng là đéo có thưởng rồi. Thế bây giờ điếc lấy tiền đâu đi trả nợ bây giờ tại vì độc tiền lương đi trả kiểu tiền nhà xong đúng không? Bây giờ thuê phòng trọ, hồi đấy tôi ở một mình cơ, hồi đấy đầu đầu tiên là tôi ở với cả một ông nữa cũng làm ở bên năm trăm bút, sau ông tướng kia thì ông ấy, ông ấy tách ra, ông ấy về, ông ấy, ông vẫn nằm năm trăm bros chứ, Nhưng mà nó lại về ở gia đình. Các bạn hiểu không? Có người yêu về gia đình ở với vợ, sang ở với người yêu các kiểu. Thế là mình mình một phòng. Ôi dồi ôi. Tiền nhà, tiền điện, tiền nước cứ tầm khoảng 2 triệu một mình mình trả trong phòng thì mình nhẽo về. Mãi mấy sau bắt đầu tôi mới tìm được một cái giải pháp, đấy là mấy thằng bạn tôi nó bảo thôi mày bây giờ ở mình còn đéo thì mày sang đây ở với tao, phòng tao bây giờ rộng mà bây giờ mình tao ở một mình thì cũng phí và cái thứ 2 nữa là nó chịu cho tôi. Hồi đấy thằng bạn tôi nhiều tiền lắm các bạn ạ, Ừ mẹ nó còn thuê cả người đi làm hộ là các bạn hiểu nó như thế nào rồi đấy. Ngày xưa thằng bạn tôi nó ma giáo lắm, suốt ngày thì chỉ thấy nó đi đánh bài thôi. Mang tiếng đi làm công ty nhưng mà nó còn bỏ cả tiền ra nó thuê người đi làm hộ thì tôi thấy là thằng này nó đỉnh cao, sau đó thuê 1",
+          "exact_match": false,
+          "char_edit_distance": 134,
+          "char_edit_rate": 0.03387259858442872,
+          "punctuation_reference": "..?..,...,,,,..,.,..,?,.,.,,,,,.........,.,.....,,.,...,.?,,,.,,.,....?,.,..,...?,,..,,,,.,,,,.....,..",
+          "punctuation_output": ",.,,,.,,.,,,?,..,,,..,....,,.....,,,...?..?,,?,,.,..?,,,,,,,,.?,...,,.,,.,.,.,",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -26,
+          "timing": {
+            "mean_ms": 625.1043544998538,
+            "p50_ms": 626.9358750014362,
+            "min_ms": 623.2728339982714,
+            "max_ms": 626.9358750014362
+          }
+        }
+      ]
+    },
+    {
+      "key": "tourmii-vietnamese-punc-cap-denorm-v1",
+      "repo_id": "tourmii/vietnamese-punc-cap-denorm-v1",
+      "kind": "seq2seq",
+      "description": "mBART text2text punc/cap/denormalization candidate.",
+      "local_dir": "/Users/leakless/code/vit-stt/models/capu/benchmark-candidates/tourmii--vietnamese-punc-cap-denorm-v1",
+      "model_size_mb": 1588.914393,
+      "init_ms": 2839.0906670010736,
+      "first_inference_ms": 463.98812500046915,
+      "first_output": "Định nghĩa thế nào là ăn mặc đẹp?.",
+      "overall_timing": {
+        "mean_ms": 8768.687378416416,
+        "p50_ms": 2906.7846250000002,
+        "min_ms": 490.1367919992481,
+        "max_ms": 26729.1796669997
+      },
+      "case_count": 12,
+      "exact_match_count": 1,
+      "exact_match_rate": 0.08333333333333333,
+      "punctuation_exact_match_count": 2,
+      "punctuation_exact_match_rate": 0.16666666666666666,
+      "mean_char_edit_rate": 0.1674556519888951,
+      "cases": [
+        {
+          "id": "snippet/probe",
+          "source": "locked_snippet",
+          "input_chars": 32,
+          "input_words": 8,
+          "reference": "Định nghĩa thế nào là ăn mặc đẹp?",
+          "output": "Định nghĩa thế nào là ăn mặc đẹp?.",
+          "exact_match": false,
+          "char_edit_distance": 1,
+          "char_edit_rate": 0.030303030303030304,
+          "punctuation_reference": "?",
+          "punctuation_output": "?.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 508.4061044990449,
+            "p50_ms": 526.6754169988417,
+            "min_ms": 490.1367919992481,
+            "max_ms": 526.6754169988417
+          }
+        },
+        {
+          "id": "snippet/long_vi_segment",
+          "source": "locked_snippet",
+          "input_chars": 127,
+          "input_words": 30,
+          "reference": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+          "output": "Xin kính chào quý vị khán giả, thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất, Quốc hội XVI sẽ được khai mạc trọng thể.",
+          "exact_match": false,
+          "char_edit_distance": 16,
+          "char_edit_rate": 0.12307692307692308,
+          "punctuation_reference": ".,.",
+          "punctuation_output": ",,,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": 1,
+          "timing": {
+            "mean_ms": 1155.5641874992943,
+            "p50_ms": 1163.563083999179,
+            "min_ms": 1147.5652909994096,
+            "max_ms": 1163.563083999179
+          }
+        },
+        {
+          "id": "snippet/legacy_expected_test_transcript",
+          "source": "locked_snippet",
+          "input_chars": 52,
+          "input_words": 13,
+          "reference": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+          "output": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+          "exact_match": true,
+          "char_edit_distance": 0,
+          "char_edit_rate": 0.0,
+          "punctuation_reference": ",.",
+          "punctuation_output": ",.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": 0,
+          "timing": {
+            "mean_ms": 557.1281874990746,
+            "p50_ms": 570.6312919992342,
+            "min_ms": 543.6250829989149,
+            "max_ms": 570.6312919992342
+          }
+        },
+        {
+          "id": "snippet/model_card_example",
+          "source": "locked_snippet",
+          "input_chars": 200,
+          "input_words": 41,
+          "reference": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+          "output": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Ned Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+          "exact_match": false,
+          "char_edit_distance": 5,
+          "char_edit_rate": 0.024390243902439025,
+          "punctuation_reference": ",,,,.",
+          "punctuation_output": ",,,,.",
+          "punctuation_exact_match": true,
+          "uppercase_delta": -1,
+          "timing": {
+            "mean_ms": 1740.8002704996761,
+            "p50_ms": 1790.2719159992557,
+            "min_ms": 1691.3286250000965,
+            "max_ms": 1790.2719159992557
+          }
+        },
+        {
+          "id": "asset/weanxinviec/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 197,
+          "input_words": 49,
+          "reference": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng.",
+          "output": "\"Dạ ờ định nghĩa thế nào là ăn mặc đẹp là anh vẫn em rồi, sếp à?\". \"Định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô, đó không phải là mình mình, em cần phải tiếp tục nói vào Quảng Ngãi em à, không đúng.",
+          "exact_match": false,
+          "char_edit_distance": 16,
+          "char_edit_rate": 0.07804878048780488,
+          "punctuation_reference": ",,?,....",
+          "punctuation_output": ",?.,,,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -3,
+          "timing": {
+            "mean_ms": 2117.700812500516,
+            "p50_ms": 2176.2159999998403,
+            "min_ms": 2059.1856250011915,
+            "max_ms": 2176.2159999998403
+          }
+        },
+        {
+          "id": "asset/weanxinviec/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 201,
+          "input_words": 50,
+          "reference": "Dạ, ờ, định nghĩa thế nào là ăn mặc đẹp? Là anh vẫn em rồi, sếp à. Em định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô đó không phải là mình mình. Em cần phải tiếp tục nói vào Quảng Ngãi em à. Không đúng rồi.",
+          "output": "\"Dạ ờ định nghĩa thế nào là ăn mặc đẹp là anh vẫn em rồi, sếp à?\". \"Định nghĩa ăn mặc đẹp có nghĩa là nó mình nhìn vô, đó không phải là mình mình, em cần phải tiếp tục nói vào Quảng Ngãi em à, không đúng rồi.",
+          "exact_match": false,
+          "char_edit_distance": 16,
+          "char_edit_rate": 0.07655502392344497,
+          "punctuation_reference": ",,?,....",
+          "punctuation_output": ",?.,,,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -3,
+          "timing": {
+            "mean_ms": 2154.960562499582,
+            "p50_ms": 2192.050499999823,
+            "min_ms": 2117.870624999341,
+            "max_ms": 2192.050499999823
+          }
+        },
+        {
+          "id": "asset/thoitiet936/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 281,
+          "input_words": 68,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố, lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao động từ 2.",
+          "output": "Quý vị đang theo dõi bản tin dự báo thời tiết của Báo Nhân Dân thưa quý vị, hôm nay, khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh, trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao động từ 2.",
+          "exact_match": false,
+          "char_edit_distance": 8,
+          "char_edit_rate": 0.02768166089965398,
+          "punctuation_reference": ".,,,,,.,,.",
+          "punctuation_output": ",,,,,,,,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -2,
+          "timing": {
+            "mean_ms": 2926.9697290001204,
+            "p50_ms": 2947.1548330002406,
+            "min_ms": 2906.7846250000002,
+            "max_ms": 2947.1548330002406
+          }
+        },
+        {
+          "id": "asset/thoitiet936/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 1143,
+          "input_words": 267,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp.",
+          "output": "Quý vị đang theo dõi bản tin dự báo thời tiết của Báo Nhân Dân thưa quý vị, hôm nay, khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh, trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh (nhiệt độ dao động từ 22 cho đến 26 độ C). Nhìn chung, thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm, tiếp theo là khu vực Bắc Trung Bộ từ Thanh trở vào cho đến Huế (do ảnh hưởng của không khí lạnh tăng cường). Khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển, lượng mưa nhìn chung là không lớn nhưng thời tiết trở nên dịu mát hơn so với những ngày trước, nhiệt độ dao động từ 23 cho đến 25 độ C, khu vực duyên hải Nam Trung Bộ (từ Đà Nẵng đến Khánh). Trong ngày hôm nay, trời nhiều mây hơn, một số nơi có thể xuất hiện tượng mưa nhẹ... Tuy nhiên, thời gian mưa không kéo dài, ban ngày, nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ 27 cho đến 31 độ C, tiếp theo là khu vực cao nguyên Trung Bộ, hôm nay khu vực này tiếp.",
+          "exact_match": false,
+          "char_edit_distance": 123,
+          "char_edit_rate": 0.10521813515825491,
+          "punctuation_reference": ".,,,,.,...,,,.,..,,,,,..,.",
+          "punctuation_output": ",,,,,,,.,,.,,,,,.,,...,,,,,,,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -9,
+          "timing": {
+            "mean_ms": 12054.050833500696,
+            "p50_ms": 12063.861000000543,
+            "min_ms": 12044.24066700085,
+            "max_ms": 12063.861000000543
+          }
+        },
+        {
+          "id": "asset/thoitiet936/4m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 2220,
+          "input_words": 514,
+          "reference": "Quý vị đang theo dõi bản tin Dự báo thời tiết của báo Nhân Dân. Thưa quý vị, hôm nay khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh. Nhiệt độ dao động từ hai mươi hai cho đến hai mươi sáu độ C. Nhìn chung thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm. Tiếp theo là khu vực Bắc Trung Bộ từ Thanh Hóa trở vào cho đến Huế do ảnh hưởng của không khí lạnh tăng cường, khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển. Lượng mưa nhìn chung là không lớn, nhưng thời tiết trở nên dịu mát hơn so với những ngày trước. Nhiệt độ dao động từ hai mươi ba cho đến hai mươi lăm độ C. Khu vực Duyên hải Nam Trung Bộ từ Đà Nẵng đến Khánh Hòa trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài, ban ngày nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu, nhiệt độ dao động từ hai mươi bảy cho đến ba mươi mốt độ C. Tiếp theo là khu vực cao nguyên Trung Bộ. Hôm nay, khu vực này tiếp tục duy trì trạng thái tạnh ráo, ngày có nắng nhưng mà không quá gay gắt. Thời tiết nhìn chung thuận lợi cho các hoạt động ngoài trời, nhiệt độ dao động từ hai mươi chín cho đến ba mươi hai độ C, cuối cùng là khu vực Nam Bộ. Trong ngày hôm nay, thời tiết Nam Bộ tiếp tục ổn định với trời nắng từ sớm và kéo dài trong ngày, chưa có dấu hiệu mưa trở lại. Nền nhiệt duy trì ở mức khá cao nhưng mà chưa xuất hiện nắng nóng trên diện rộng. Nhiệt độ dao động từ ba mươi hai cho đến ba mươi tư độ C. Chuyển sang thông tin thời tiết biển từ trưa và chiều nay tại Vịnh Bắc Bộ và khu vực Bắc Biển Đông, bao gồm đặc khu Hoàng Sa, gió chuyển hướng Đông Bắc mạnh dần lên cấp 6, giật cấp 7, cấp 8 khiến biển động, sóng biển cao từ 1 phẩy 5 cho đến 2 phẩy 5 m. riêng Bắc Biển Đông biển động mạnh hơn với sóng cao từ 3 đến 5 mét. Tàu thuyền hoạt động trên các vùng biển này cần lưu ý theo dõi diễn biến thời tiết để đảm bảo an toàn vừa rồi là những thông tin thời tiết đáng chú ý trong ngày hôm nay. Và sau đây là dự báo thời tiết chi tiết 3 ngày tiếp theo tại các tỉnh, thành phố trên cả nước.",
+          "output": "Quý vị đang theo dõi bản tin dự báo thời tiết của Báo Nhân Dân thưa quý vị, hôm nay, khu vực Bắc Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh (trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao động từ 22 cho đến 26 độ C). Nhìn chung, thời tiết Bắc Bộ trong ngày có mưa trên diện rộng và nền nhiệt có xu hướng giảm, tiếp theo là khu vực Bắc Trung Bộ từ Thanh trở vào cho đến Huế (do ảnh hưởng của không khí lạnh tăng cường). Khu vực này trong ngày hôm nay mây tăng, nhiều nơi có mưa rải rác, tập trung chủ yếu là ở khu vực ven biển, lượng mưa nhìn chung là không lớn nhưng thời tiết trở nên dịu mát hơn so với những ngày trước, nhiệt độ dao động từ 23 cho đến 25 độ C (khu vực duyên hải Nam Trung Bộ). Từ Đà Nẵng đến Khánh trong ngày hôm nay trời nhiều mây hơn, một số nơi có thể xuất hiện hiện tượng mưa nhẹ, tuy nhiên thời gian mưa không kéo dài ban ngày, nhiệt độ vẫn ở mức khá cao, thời tiết tương đối dễ chịu (nhiệt độ dao động từ 29 cho đến 31 độ C). Tiếp theo là khu vực cao nguyên Trung Bộ, hôm nay, khu vực này tiếp tục duy trì trạng thái tạnh ráo, ngày có nắng nhưng mà không quá gay gắt (thời tiết nhìn chung thuận lợi cho các hoạt động ngoài trời nhiệt độ dao động từ 29 cho đến 32 độ C). Cuối cùng là khu vực Nam Bộ, trong ngày hôm nay, thời tiết Nam Bộ tiếp tục ổn định với trời nắng từ sớm và kéo dài trong ngày (chưa có dấu hiệu mưa trở lại). Nền nhiệt duy trì ở mức khá cao nhưng mà chưa xuất hiện nắng nóng trên diện rộng (nhiệt độ dao động từ 34 cho đến 34 độ C). Chuyển sang thông tin thời tiết biển từ trưa và chiều nay tại Vịnh Bắc Bộ và khu vực Bắc Bộ và khu vực Bắc Biển Đông (cần)",
+          "exact_match": false,
+          "char_edit_distance": 646,
+          "char_edit_rate": 0.28749443702714733,
+          "punctuation_reference": ".,,,,.,...,,,.,..,,,,,..,,.,,.,,...,,,,,...,.",
+          "punctuation_output": ",,,,,,,.,,.,,,,.,,,,.,,,.,,..",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -18,
+          "timing": {
+            "mean_ms": 26038.079500000094,
+            "p50_ms": 26729.1796669997,
+            "min_ms": 25346.97933300049,
+            "max_ms": 26729.1796669997
+          }
+        },
+        {
+          "id": "asset/bomman/30s",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 485,
+          "input_words": 114,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc, anh về là làm.",
+          "output": "Chào buổi tối nha,i mới ra trường lương 15 triệu, ok không anh ơi, ui ngon vãi em 15 triệu, mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có ờ đợt ngày xưa học, em mới hát chớ lúc đầu anh còn phải đi học việc, bắt đầu được hỗ trợ 500 nghìn tiền ăn trưa, bắt đầu công ty trả cho gọi là part tim cho 2 triệu, trong công ty nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu rồi sau đó là anh nghỉ việc, anh về là làm.",
+          "exact_match": false,
+          "char_edit_distance": 51,
+          "char_edit_rate": 0.10344827586206896,
+          "punctuation_reference": "..?..,...,,,,.,.",
+          "punctuation_output": ",,,,,,,,,,.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -11,
+          "timing": {
+            "mean_ms": 4570.713187499678,
+            "p50_ms": 4595.876999999746,
+            "min_ms": 4545.549374999609,
+            "max_ms": 4595.876999999746
+          }
+        },
+        {
+          "id": "asset/bomman/2m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 1947,
+          "input_words": 462,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống, tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả.",
+          "output": "Chào buổi tối nha,i mới ra trường lương 15 triệu, ok không anh ơi, Ui ngon vãi em 15 triệu, mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có . Đợt ngày xưa học, em mới hát chớ lúc đầu anh còn phải đi học việc, bắt đầu được hỗ trợ 500 nghìn tiền ăn trưa, bắt đầu công ty trả cho gọi là part tim cho 2 triệu, trong công ty nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu rồi, sau đó là anh nghỉ việc, anh về là làm 500 bro, làm 500 bờ, rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng Art On là 2 triệu nữa đấy, thế là tổng là 1 tháng là 2 triệu là cái tiền đôn nết ấy, các bạn hiểu không ví dụ như kiểu là Stodio được đôn 1 tháng được khoảng 10 mấy triệu, 2 triệu, thì tôi sẽ được khoảng 1-2 triệu, tiền thừa thế đâm ra là 1 tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5 năm triệu, cộng 2 sau bắt đầu có 1 câu chuyện là: Bọn tôi, đợt đấy đi Huế, anh Dũng có 1 cái tháng là anh dũng kết nối tình nghĩa, anh em cho tất cả anh em đang trạm BT đi du lịch 1 phát có tôi đi huệ, các bạn thế là anh ấy làm anh dũng cho 1 chuyến tàu, tất cả mua vé tàu lên tàu đi Huế chơi à, tháng đấy bọn tôi làm được 20 triệu tiền đôn nết ừ, tôi nhớ tại tôi nhớ đợt đấy, tôi cắt cái giải gì, cống hiến lắm, anh dũng vác 20 triệu tiền đi cho anh em ăn chơi ở Huế, bọn tôi đi tổng cộng đợt đấy là 7 người xuống đấy là chơi với đội anh em, set-go cộng đồng, set-ga ở Huế rồi các kiểu đi 3 ngày 2 đêm là còn mua hẳn vé máy bay cho anh em, bay về bằng Viet, sau chuyến đi đấy về là coi như tiêu hết sạch tiền đô nết đến tháng đấy tôi đéo có được thưởng nữa, tôi được đúng 5 triệu mà hồi đấy, tôi đang thuê cái nhà hết, con mẹ sau khi trả xong tiền ăn uống, tôi trắng tay luôn, tôi trắng tay luôn, tôi nhớ là đấy là tôi...",
+          "exact_match": false,
+          "char_edit_distance": 321,
+          "char_edit_rate": 0.16310975609756098,
+          "punctuation_reference": "..?..,...,,,,..,.,..,?,.,.,,,,,.........,.,.....,,,.,.",
+          "punctuation_output": ",,,,.,,,,,,,,,,,,,,,,:,,,,,,,,,,,,,,,,,,,,,...",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -34,
+          "timing": {
+            "mean_ms": 25614.951832999395,
+            "p50_ms": 26206.07249999921,
+            "min_ms": 25023.83116599958,
+            "max_ms": 26206.07249999921
+          }
+        },
+        {
+          "id": "asset/bomman/4m",
+          "source": "previous_audio_derived_python_capu",
+          "input_chars": 3895,
+          "input_words": 930,
+          "reference": "Chào buổi tối nha. I mới ra trường lương mười lăm triệu. Ok không anh ơi? Ui ngon vãi em. Mười lăm triệu mới ra trường anh thấy là ngon thôi chứ mới ra trường ngày xưa anh lương anh được có Ờ. Đợt ngày xưa học I, anh mới hát chớ. Lúc đầu anh còn phải đi học. Việc bắt đầu được hỗ trợ 5 trăm nghìn tiền ăn trưa. Bắt đầu công ty trả cho, gọi là part, tim cho 2 triệu trong công ty, nâng lương lên 4 triệu, sau anh lên được đỉnh cao của anh là 6 triệu. Rồi sau đó là anh nghỉ việc. Anh về là làm 5 trăm, Bro làm 5 trăm B. Rốt thì mấy anh em thì anh Dũng trả cho anh là lương là 5 triệu, cộng thêm lương cứng art on là 2 triệu nữa đấy. Thế là tổng cộng là một tháng là hai triệu. Là cái tiền đôn nết ấy, các bạn hiểu không? Ví dụ như kiểu là Stodio được đôn một tháng được khoảng mười mấy triệu, hai mươi triệu thì tôi sẽ được khoảng 1 đến 2 triệu tiền thừa. Thế đâm ra là một tháng lương ngày xưa của tôi là rơi vào tầm khoảng 5, 5 triệu cộng 2. Sau bắt đầu có một câu chuyện là bọn tôi đợt đấy đi Huế anh Dũng có một cái tháng là anh Dũng kết nối tình nghĩa anh em, cho tất cả anh em đang trạm BT đi du lịch một phát, có tôi đi Huệ các bạn, thế là anh ấy làm anh dũng cho một chuyến tàu, tất cả mua vé tàu, lên tàu đi Huế chơi. À. Tháng đấy bọn tôi làm được hai mươi triệu tiền đôn nết. Ừ. Tôi nhớ. Tại tôi nhớ. Đợt đấy tôi cắt cái giải gì cống hiến lắm. Anh em nhiệt tình lắm. Anh Dũng vác hai mươi triệu tiền đi cho anh em ăn chơi ở Huế. Bọn tôi đi tổng cộng đợt đấy là bảy người, xuống đấy là chơi với đội anh em set go cộng đồng setga ở Huế rồi các kiểu. Đi ba ngày 2 đêm, về là còn mua hẳn vé máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang thuê cái nhà hết mẹ 2 triệu tiền nhà. Ôi giời ơi, con mẹ sau khi trả xong tiền nhà, tiền ăn uống tay tôi trắng tay luôn. Tôi, tôi nhớ là đấy là tôi trắng tay đến mức là hôm đấy tôi nghẹt cả mặt ra. Tôi bảo nào sống nhở làm nào để ở lại đất Hà Nội bây giờ. Tiền ăn thì đâu có ngày hôm đấy sao tôi cũng mặt dày. Tôi gọi điện lại cho cậu mợ, tôi ở bên công ty cũ thôi. Cậu mợ là cho cháu vay 5 triệu không? Hồi hồi xưa tôi thật, các bạn là tôi cũng bình thường, tôi cũng đâu dám vay anh em đâu, tại cũng ngại. Hiểu không, Một số anh em thì người ta có tiền thật, nhưng mà mình kiểu nhiều lúc không đến mức thì mình nhưng mà nhiều lúc nghĩ nó vay nó cũng nhục. Kiểu vay mà cảm giác nó trả được thì nghe nó còn hợp lý, vay toàn vay kiểu đéo biết bao giờ sẽ trả cơ. Có những khoản vay tôi thật các bạn là bây giờ vay xong bảo lương 5 triệu sau tháng nào làm nhiều được đôn nết nhiều thì được thưởng thêm 2 triệu. Thằng nào đéo có việc thì đéo có được đôn nết thì rõ ràng là đéo có thưởng rồi. Thế bây giờ điếc lấy tiền đâu đi trả nợ bây giờ. Tại vì độc tiền lương đi trả kiểu tiền nhà xong đúng không? Bây giờ thuê phòng trọ, hồi đấy tôi ở một mình cơ. Hồi đấy đầu đầu tiên là tôi ở với cả một ông nữa, cũng làm ở bên Năm Trăm Bút. Sau ông tướng kia thì ông ấy. Ông ấy tách ra, ông ấy về ông ấy. Ông vẫn nằm năm trăm bros chứ. Nhưng mà nó lại về ở gia đình. Các bạn hiểu không? Có người yêu, về gia đình ở với vợ, sang ở với người yêu các kiểu. Thế là mình mình một phòng. Ôi dồi ôi, tiền nhà, tiền điện, tiền nước cứ tầm khoảng 2 triệu, một mình mình trả trong phòng thì mình nhẽo về. Mãi mấy sau, bắt đầu tôi mới tìm được một cái giải pháp, đấy là mấy thằng bạn tôi, nó bảo thôi mày bây giờ ở mình, còn đéo thì mày sang đây ở với tao. Phòng tao bây giờ rộng mà bây giờ mình tao ở một mình thì cũng phí. Và cái thứ hai nữa là nó chịu cho tôi. Hồi đấy thằng bạn tôi nhiều tiền lắm các bạn ạ. Ừ mẹ nó còn thuê cả người đi làm hộ là các bạn hiểu nó như thế nào rồi đấy. Ngày xưa thằng bạn tôi nó ma giáo lắm, suốt ngày thì chỉ thấy nó đi đánh bài thôi. Mang tiếng đi làm công ty nhưng mà nó còn bỏ cả tiền ra nó thuê người đi làm hộ thì tôi thấy là thằng này nó đỉnh cao sau đó thuê một.",
+          "output": "\"Chào buổi, tối là \"việc\", \"đểu\", \"viên\", \"được\"!.",
+          "exact_match": false,
+          "char_edit_distance": 3917,
+          "char_edit_rate": 0.9901415571284126,
+          "punctuation_reference": "..?..,...,,,,..,.,..,?,.,.,,,,,.........,.,.....,,.,...,.?,,,.,,.,....?,.,..,...?,,..,,,,.,,,,.....,..",
+          "punctuation_output": ",,,,!.",
+          "punctuation_exact_match": false,
+          "uppercase_delta": -83,
+          "timing": {
+            "mean_ms": 25784.923332999824,
+            "p50_ms": 25879.301875000237,
+            "min_ms": 25690.54479099941,
+            "max_ms": 25879.301875000237
+          }
+        }
+      ]
+    }
+  ]
+}

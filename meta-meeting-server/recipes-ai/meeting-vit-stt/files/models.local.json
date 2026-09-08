@@ -1,0 +1,19 @@
+{
+  "capu_models": [],
+  "models": [
+    {
+      "id": "vit_stt_vi_v2",
+      "language": "vi",
+      "model_dir": "models/stt/sherpa-onnx-zipformer-vi-int8-2025-04-20",
+      "model_type": "transducer",
+      "postprocess_mode": "clean_lower"
+    },
+    {
+      "id": "vit_stt_en_v2",
+      "language": "en",
+      "model_dir": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming",
+      "model_type": "nemo_transducer",
+      "postprocess_mode": "none"
+    }
+  ]
+}

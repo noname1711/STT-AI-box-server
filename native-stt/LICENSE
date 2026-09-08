@@ -1,0 +1,24 @@
+VietInnotech Proprietary Software License
+
+Copyright (c) 2026 VietInnotech. All rights reserved.
+
+This software, including source code, binaries, configuration files, scripts,
+documentation, and related materials, is proprietary to VietInnotech.
+
+No permission is granted to copy, modify, publish, distribute, sublicense,
+sell, reverse engineer, decompile, or create derivative works from this software
+except as expressly permitted under a separate written agreement with
+VietInnotech.
+
+This product may include third-party open-source software, open-weight models,
+and other third-party materials. Those third-party components remain subject to
+their own license terms, which are provided separately in THIRD_PARTY_NOTICES.md
+and the licenses/ directory.
+
+Nothing in this license limits rights that users may have under the licenses of
+third-party components distributed with this product.
+
+THE SOFTWARE IS PROVIDED UNDER THE TERMS OF THE APPLICABLE COMMERCIAL AGREEMENT.
+EXCEPT AS REQUIRED BY LAW OR EXPRESSLY AGREED IN WRITING, VIETINNOTECH DISCLAIMS
+ALL WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NON-INFRINGEMENT.

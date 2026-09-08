@@ -1,0 +1,32 @@
+{
+  "capu_models": [
+    {
+      "id": "vibert-capu",
+      "model_dir": "models/capu/vibert-capu"
+    }
+  ],
+  "models": [
+    {
+      "id": "vit_stt_vi_v2",
+      "language": "vi",
+      "model_dir": "models/stt/gipformer-65M-rnnt",
+      "postprocess_mode": "capu",
+      "capu_model_id": "vibert-capu",
+      "vad_min_silence": 0.5,
+      "vad_min_speech": 0.05,
+      "vad_max_speech": 14.0,
+      "startup_probe_wav_path": "baselines/phase0/vi_probe.wav",
+      "startup_probe_expected_text": "ĐỊNH NGHĨA THẾ NÀO LÀ ĂN MẶC ĐẸP"
+    },
+    {
+      "id": "vit_stt_en_v2",
+      "language": "en",
+      "model_dir": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming",
+      "model_type": "nemo_transducer",
+      "postprocess_mode": "none",
+      "vad_min_silence": 0.5,
+      "startup_probe_wav_path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/test_wavs/0.wav",
+      "startup_probe_expected_text": "Well, I don't wish to see it any more, observed Phoebe, turning away her eyes. It is certainly very like the old portrait"
+    }
+  ]
+}

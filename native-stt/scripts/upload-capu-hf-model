@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+REPO_ID="${1:?usage: scripts/upload-capu-hf-model <namespace/repo> [model-dir]}"
+MODEL_DIR="${2:-$ROOT/models/capu/vibert-capu}"
+PYTHON_BIN="${PYTHON_BIN:-$ROOT/capu-worker/.venv/bin/python}"
+
+"$PYTHON_BIN" - "$REPO_ID" "$MODEL_DIR" <<'PY'
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+repo_id = sys.argv[1]
+model_dir = Path(sys.argv[2]).expanduser().resolve()
+
+if not model_dir.joinpath("config.json").is_file():
+    raise SystemExit(f"missing CAPU config.json in {model_dir}")
+if not model_dir.joinpath("base_model", "vocab.txt").is_file():
+    raise SystemExit(f"missing consolidated base_model/vocab.txt in {model_dir}")
+
+try:
+    from huggingface_hub import HfApi
+except ImportError as exc:
+    raise SystemExit(
+        "huggingface_hub is required. Run `stt-cli setup` first."
+    ) from exc
+
+api = HfApi()
+api.create_repo(repo_id=repo_id, repo_type="model", exist_ok=True)
+api.upload_folder(
+    repo_id=repo_id,
+    repo_type="model",
+    folder_path=str(model_dir),
+    ignore_patterns=["__pycache__/*", "*.pyc", ".DS_Store"],
+    commit_message="Upload consolidated CAPU model",
+)
+print(f"Uploaded {model_dir} to https://huggingface.co/{repo_id}")
+PY

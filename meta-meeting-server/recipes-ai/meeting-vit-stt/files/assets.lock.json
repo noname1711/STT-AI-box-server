@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-10T00:00:00Z",
+  "note": "HL Meet minimal production lock: Zipformer VI + Parakeet EN only.",
+  "entries": [
+    {
+      "id": "stt.vi.encoder",
+      "path": "models/stt/sherpa-onnx-zipformer-vi-int8-2025-04-20/encoder-epoch-12-avg-8.int8.onnx",
+      "sha256": "b3abdef7a660fea7faf5e076b3c7613b0fc98406707103784d018189bb522124"
+    },
+    {
+      "id": "stt.vi.decoder",
+      "path": "models/stt/sherpa-onnx-zipformer-vi-int8-2025-04-20/decoder-epoch-12-avg-8.onnx",
+      "sha256": "d1d27cca84c824a8acf5ce6edf0f2c0880cfe295d2e69b95134de1707e1d9998"
+    },
+    {
+      "id": "stt.vi.joiner",
+      "path": "models/stt/sherpa-onnx-zipformer-vi-int8-2025-04-20/joiner-epoch-12-avg-8.int8.onnx",
+      "sha256": "38ec49e1c18e4feb0cad4de13e25c83a866cf56f4a66f22e8ff579d591a69a46"
+    },
+    {
+      "id": "stt.vi.tokens",
+      "path": "models/stt/sherpa-onnx-zipformer-vi-int8-2025-04-20/tokens.txt",
+      "sha256": "f536d03c2e95ebd2930cf0abec88e823bd17d3c1933da7ae6a82db3b80605e15"
+    },
+    {
+      "id": "stt.vi.bpe",
+      "path": "models/stt/sherpa-onnx-zipformer-vi-int8-2025-04-20/bpe.model",
+      "sha256": "289dbb44527c13c419ae3a4d8ce6a349f01a97f8777e69934a77e3692d2f10db"
+    },
+    {
+      "id": "stt.en.encoder",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/encoder.int8.onnx",
+      "sha256": "6716910b7a0833997fec7a410494c995d70124001a0e9b66d6370d6aced577e0"
+    },
+    {
+      "id": "stt.en.decoder",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/decoder.int8.onnx",
+      "sha256": "a5e223392c90e75f8144cdb5eb95af7625db389e39edef2bd1a9c872b3298fe6"
+    },
+    {
+      "id": "stt.en.joiner",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/joiner.int8.onnx",
+      "sha256": "869f43f7d24595c55581ad3bf249a935fb8a71389fbdaa7504b9f46f93140f8a"
+    },
+    {
+      "id": "stt.en.tokens",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/tokens.txt",
+      "sha256": "dc0b4584ab2e4ddbf888425c076c61b736e7356a015250db7d307e6f1a8188ff"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-05-19T00:00:00Z",
+  "note": "Phase 0 lock captured from real local assets. The original gipformer test_wavs/0.wav was missing, so vi_probe.wav was extracted from tests/assets/weanxinviec.mp3.",
+  "entries": [
+    {
+      "id": "stt.vi.encoder",
+      "path": "models/stt/gipformer-65M-rnnt/encoder-epoch-35-avg-6.int8.onnx",
+      "sha256": "3cc1a719f04d6051210e03833eef0d42939352c6f4704b67c34655ceecb98809",
+      "url": "https://huggingface.co/g-group-ai-lab/gipformer-65M-rnnt/resolve/main/encoder-epoch-35-avg-6.int8.onnx"
+    },
+    {
+      "id": "stt.vi.decoder",
+      "path": "models/stt/gipformer-65M-rnnt/decoder-epoch-35-avg-6.int8.onnx",
+      "sha256": "2b6235b8a8be57b5ba57024f6119398a1aace6aff23347a04d59c9bd2686c1f6",
+      "url": "https://huggingface.co/g-group-ai-lab/gipformer-65M-rnnt/resolve/main/decoder-epoch-35-avg-6.int8.onnx"
+    },
+    {
+      "id": "stt.vi.joiner",
+      "path": "models/stt/gipformer-65M-rnnt/joiner-epoch-35-avg-6.int8.onnx",
+      "sha256": "eb74e2ead853d64161ee7af2aa2bce5fcc64752d07f72e0683926b238296d58f",
+      "url": "https://huggingface.co/g-group-ai-lab/gipformer-65M-rnnt/resolve/main/joiner-epoch-35-avg-6.int8.onnx"
+    },
+    {
+      "id": "stt.vi.tokens",
+      "path": "models/stt/gipformer-65M-rnnt/tokens.txt",
+      "sha256": "f536d03c2e95ebd2930cf0abec88e823bd17d3c1933da7ae6a82db3b80605e15",
+      "url": "https://huggingface.co/g-group-ai-lab/gipformer-65M-rnnt/resolve/main/tokens.txt"
+    },
+    {
+      "id": "stt.vi.bpe",
+      "path": "models/stt/gipformer-65M-rnnt/bpe.model",
+      "sha256": "289dbb44527c13c419ae3a4d8ce6a349f01a97f8777e69934a77e3692d2f10db",
+      "url": "https://huggingface.co/g-group-ai-lab/gipformer-65M-rnnt/resolve/main/bpe.model"
+    },
+    {
+      "id": "vad.ten",
+      "path": "models/vad/ten-vad.int8.onnx",
+      "sha256": "880c072f188efa169ea028b2159d1b3a438e153d080b87eac31b74ecad511e61",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/ten-vad.int8.onnx"
+    },
+    {
+      "id": "stt.en.parakeet.encoder",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/encoder.int8.onnx",
+      "sha256": "6716910b7a0833997fec7a410494c995d70124001a0e9b66d6370d6aced577e0",
+      "archive_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/encoder.int8.onnx"
+    },
+    {
+      "id": "stt.en.parakeet.decoder",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/decoder.int8.onnx",
+      "sha256": "a5e223392c90e75f8144cdb5eb95af7625db389e39edef2bd1a9c872b3298fe6",
+      "archive_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/decoder.int8.onnx"
+    },
+    {
+      "id": "stt.en.parakeet.joiner",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/joiner.int8.onnx",
+      "sha256": "869f43f7d24595c55581ad3bf249a935fb8a71389fbdaa7504b9f46f93140f8a",
+      "archive_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/joiner.int8.onnx"
+    },
+    {
+      "id": "stt.en.parakeet.tokens",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/tokens.txt",
+      "sha256": "dc0b4584ab2e4ddbf888425c076c61b736e7356a015250db7d307e6f1a8188ff",
+      "archive_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/tokens.txt"
+    },
+    {
+      "id": "stt.en.parakeet.probe",
+      "path": "models/stt/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/test_wavs/0.wav",
+      "sha256": "5fceacff0315d49cb59fcc505bcecf1ed5f2f35c2897b1e65a59f30e5d922150",
+      "archive_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-parakeet-unified-en-0.6b-int8-non-streaming/test_wavs/0.wav"
+    },
+    {
+      "id": "capu.config",
+      "path": "models/capu/vibert-capu/config.json",
+      "sha256": "8c3257a6ae2d89c7e032ca29d243a5c9fbc139a29dafdd7bf59ca08b62479743",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/config.json"
+    },
+    {
+      "id": "capu.configuration_seq2labels",
+      "path": "models/capu/vibert-capu/configuration_seq2labels.py",
+      "sha256": "90c983b08002f4b1469eefd8d853ea3a2cc7e4183efc79e0b490fc12d21acf20",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/configuration_seq2labels.py"
+    },
+    {
+      "id": "capu.gec_model",
+      "path": "models/capu/vibert-capu/gec_model.py",
+      "sha256": "ca2dee13b65c2b12e67e54a02263d68dad6dae0418ceb0c7b6f410b196aba058",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/gec_model.py"
+    },
+    {
+      "id": "capu.modeling_seq2labels",
+      "path": "models/capu/vibert-capu/modeling_seq2labels.py",
+      "sha256": "1909095f9bcb6e6ba732638998e03374e7d9ddf635984099a35ad98816036ea8",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/modeling_seq2labels.py"
+    },
+    {
+      "id": "capu.utils",
+      "path": "models/capu/vibert-capu/utils.py",
+      "sha256": "d253d2e9d2563ca3c1a807b875f1859328c80a0240e968a9c44ff4fb252d61f7",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/utils.py"
+    },
+    {
+      "id": "capu.vocabulary_py",
+      "path": "models/capu/vibert-capu/vocabulary.py",
+      "sha256": "098129828abdab72ba2ff155281f703bb5d83e80d680ee9859125904b2e38b9a",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/vocabulary.py"
+    },
+    {
+      "id": "capu.weights",
+      "path": "models/capu/vibert-capu/pytorch_model.bin",
+      "sha256": "d22fc1de03bc10237eafbd7487c04bc4ef6e890ecf3a77aa678e5995bc251bfd",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/pytorch_model.bin"
+    },
+    {
+      "id": "capu.verb_form_vocab",
+      "path": "models/capu/vibert-capu/verb-form-vocab.txt",
+      "sha256": "6ac7b3e2b944ba71f4d70231452ecc895d920444cf11e5e29252a8aca15e3c2c",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/verb-form-vocab.txt"
+    },
+    {
+      "id": "capu.vocabulary.labels",
+      "path": "models/capu/vibert-capu/vocabulary/labels.txt",
+      "sha256": "a31075cfa185b5d24c3b65c009ad0740636b286090f78419eaba2d34202c2b45",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/vocabulary/labels.txt"
+    },
+    {
+      "id": "capu.vocabulary.d_tags",
+      "path": "models/capu/vibert-capu/vocabulary/d_tags.txt",
+      "sha256": "926596d65d7b928a3d4dfb553c0cd2a8189f8f2ca7cb0ba26cfbb935b5c5dfad",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/vocabulary/d_tags.txt"
+    },
+    {
+      "id": "capu.vocabulary.non_padded_namespaces",
+      "path": "models/capu/vibert-capu/vocabulary/non_padded_namespaces.txt",
+      "sha256": "863044919d9f9c1c04aba282ac981ab0157d6ab08737a96c72f7e15887911db0",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/vocabulary/non_padded_namespaces.txt"
+    },
+    {
+      "id": "capu.base.config",
+      "path": "models/capu/vibert-capu/base_model/config.json",
+      "sha256": "73ef5d5d2f4fc96d14ecef5cf68516426611a4acd193bee3b111a8704d209550",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/base_model/config.json"
+    },
+    {
+      "id": "capu.base.vocab",
+      "path": "models/capu/vibert-capu/base_model/vocab.txt",
+      "sha256": "b32ccb4ca8bee5eda7a0f55f7adebaa515be742c9f765151ffefcd29fcb542a1",
+      "url": "https://huggingface.co/leakless/vibert-capu/resolve/main/base_model/vocab.txt"
+    },
+    {
+      "id": "baseline.vi_probe",
+      "path": "baselines/phase0/vi_probe.wav",
+      "sha256": "52801e37f89d226faa698735a7d0d1a5c5272e13568d95632d0bba40a9e0226a",
+      "url": null
+    }
+  ]
+}

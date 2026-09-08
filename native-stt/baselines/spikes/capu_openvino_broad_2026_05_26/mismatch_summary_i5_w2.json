@@ -1,0 +1,132 @@
+{
+  "source_report": "/Users/leakless/code/vit-stt/baselines/spikes/capu_openvino_broad_2026_05_26/full_report_i5_w2.json",
+  "mismatch_count": 6,
+  "mismatches": [
+    {
+      "label": "thoitiet936/30s",
+      "char_count": 281,
+      "python_len": 289,
+      "openvino_len": 288,
+      "similarity_ratio": 0.9982668977469671,
+      "normalized_equal": true,
+      "first_diff": {
+        "tag": "delete",
+        "python_context": "Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố, lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao",
+        "openvino_context": "Bộ nhiều nơi có mưa, vùng núi và trung du có nơi mưa vừa, mưa to kèm dông, cần đề phòng tố lốc và gió giật mạnh. Trời nhiều mây, nhiệt độ giảm nhẹ và có cảm giác lạnh, nhiệt độ dao",
+        "python_span": [
+          187,
+          188
+        ],
+        "openvino_span": [
+          187,
+          187
+        ]
+      }
+    },
+    {
+      "label": "bomman/2m",
+      "char_count": 1947,
+      "python_len": 1968,
+      "openvino_len": 1968,
+      "similarity_ratio": 0.9984756097560976,
+      "normalized_equal": true,
+      "first_diff": {
+        "tag": "replace",
+        "python_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "openvino_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô, nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "python_span": [
+          1686,
+          1689
+        ],
+        "openvino_span": [
+          1686,
+          1689
+        ]
+      }
+    },
+    {
+      "label": "bomman/4m",
+      "char_count": 3895,
+      "python_len": 3956,
+      "openvino_len": 3958,
+      "similarity_ratio": 0.9989891331817033,
+      "normalized_equal": true,
+      "first_diff": {
+        "tag": "replace",
+        "python_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "openvino_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô, nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "python_span": [
+          1686,
+          1689
+        ],
+        "openvino_span": [
+          1686,
+          1689
+        ]
+      }
+    },
+    {
+      "label": "bomman/8m",
+      "char_count": 7792,
+      "python_len": 7958,
+      "openvino_len": 7958,
+      "similarity_ratio": 0.9989947222920331,
+      "normalized_equal": true,
+      "first_diff": {
+        "tag": "replace",
+        "python_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "openvino_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô, nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "python_span": [
+          1686,
+          1689
+        ],
+        "openvino_span": [
+          1686,
+          1689
+        ]
+      }
+    },
+    {
+      "label": "bomman/12m",
+      "char_count": 11691,
+      "python_len": 11956,
+      "openvino_len": 11958,
+      "similarity_ratio": 0.9988291377435812,
+      "normalized_equal": true,
+      "first_diff": {
+        "tag": "replace",
+        "python_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "openvino_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô, nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "python_span": [
+          1686,
+          1689
+        ],
+        "openvino_span": [
+          1686,
+          1689
+        ]
+      }
+    },
+    {
+      "label": "bomman/full",
+      "char_count": 15794,
+      "python_len": 16175,
+      "openvino_len": 16176,
+      "similarity_ratio": 0.9991035825785911,
+      "normalized_equal": true,
+      "first_diff": {
+        "tag": "replace",
+        "python_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô. Nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "openvino_context": "máy bay cho anh em bay về bằng Viet sau chuyến đi đấy. Về là coi như tiêu hết sạch tiền đô, nết đến tháng đấy tôi đéo có được thưởng nữa. Tôi được đúng 5 triệu. Mà hồi đấy tôi đang th",
+        "python_span": [
+          1686,
+          1689
+        ],
+        "openvino_span": [
+          1686,
+          1689
+        ]
+      }
+    }
+  ]
+}

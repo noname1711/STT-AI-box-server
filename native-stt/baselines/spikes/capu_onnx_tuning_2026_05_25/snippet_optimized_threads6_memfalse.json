@@ -1,0 +1,76 @@
+{
+  "export_dir": "/Users/leakless/code/vit-stt/models/capu/generated/dragonSwing--vibert-capu-onnx-optimized",
+  "snippets_path": "/Users/leakless/code/vit-stt/baselines/phase0/capu_snippets.jsonl",
+  "ort_tuning": {
+    "intra_threads": 6,
+    "memory_pattern": false
+  },
+  "benchmark_id": "model_card_example",
+  "parity": [
+    {
+      "id": "probe",
+      "expected": "Định nghĩa thế nào là ăn mặc đẹp?",
+      "python": "Định nghĩa thế nào là ăn mặc đẹp?",
+      "rust_onnx": "Định nghĩa thế nào là ăn mặc đẹp?",
+      "python_matches_expected": true,
+      "rust_matches_expected": true,
+      "python_matches_rust": true
+    },
+    {
+      "id": "long_vi_segment",
+      "expected": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+      "python": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+      "rust_onnx": "Xin kính chào quý vị khán giả. Thưa quý vị, chỉ ít phút nữa thì Kỳ họp thứ nhất Quốc hội khóa Mười sáu sẽ được khai mạc trọng thể.",
+      "python_matches_expected": true,
+      "rust_matches_expected": true,
+      "python_matches_rust": true
+    },
+    {
+      "id": "legacy_expected_test_transcript",
+      "expected": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+      "python": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+      "rust_onnx": "Rồi cũng hỗ trợ cho, lâu lâu cũng cho gạo cho này kia.",
+      "python_matches_expected": true,
+      "rust_matches_expected": true,
+      "python_matches_rust": true
+    },
+    {
+      "id": "model_card_example",
+      "expected": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+      "python": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+      "rust_onnx": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+      "python_matches_expected": true,
+      "rust_matches_expected": true,
+      "python_matches_rust": true
+    }
+  ],
+  "python_worker": {
+    "init_ms": 1466.8888749999999,
+    "first_inference_ms": 70.41137499999999,
+    "warmup_iterations": 20,
+    "sample_text": "theo đó thủ tướng dự kiến tiếp bộ trưởng nông nghiệp mỹ tom wilsack bộ trưởng thương mại mỹ gina raimondo bộ trưởng tài chính janet yellen gặp gỡ thượng nghị sĩ patrick leahy và một số nghị sĩ mỹ khác",
+    "sample_output": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+    "warm_summary": {
+      "mean_ms": 69.30061245,
+      "p50_ms": 67.74570800000001,
+      "p95_ms": 76.12537499999999,
+      "min_ms": 66.82687499999999,
+      "max_ms": 92.120875
+    }
+  },
+  "rust_onnx": {
+    "init_ms": 241.764375,
+    "first_inference_ms": 93.549042,
+    "warmup_iterations": 20,
+    "sample_text": "theo đó thủ tướng dự kiến tiếp bộ trưởng nông nghiệp mỹ tom wilsack bộ trưởng thương mại mỹ gina raimondo bộ trưởng tài chính janet yellen gặp gỡ thượng nghị sĩ patrick leahy và một số nghị sĩ mỹ khác",
+    "sample_output": "Theo đó, Thủ tướng dự kiến tiếp Bộ trưởng Nông nghiệp Mỹ Tom Wilsack, Bộ trưởng Thương mại Mỹ Gina Raimondo, Bộ trưởng Tài chính Janet Yellen, gặp gỡ Thượng nghị sĩ Patrick Leahy và một số nghị sĩ Mỹ khác.",
+    "warm_summary": {
+      "mean_ms": 92.39094999999998,
+      "p50_ms": 92.531583,
+      "p95_ms": 93.457917,
+      "min_ms": 91.08779200000001,
+      "max_ms": 93.606625
+    }
+  },
+  "recommendation": "Use the ONNX + Rust path as a validated spike only after export artifacts are present; keep the Python worker as the default production CAPU path until broader fixture coverage and packaging are added."
+}

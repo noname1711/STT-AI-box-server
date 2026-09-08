@@ -1,0 +1,11 @@
+target/
+models/
+logs/
+.git/
+.github/
+.DS_Store
+*.lock
+!Cargo.lock
+node_modules/
+release/
+docs/

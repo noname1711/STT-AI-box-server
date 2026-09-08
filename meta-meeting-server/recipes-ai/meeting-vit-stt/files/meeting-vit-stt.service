@@ -1,0 +1,61 @@
+[Unit]
+Description=HL Meet native VIT-STT backend
+After=local-fs.target
+Before=meeting-server.service
+StartLimitIntervalSec=600
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=hungle
+Group=hungle
+WorkingDirectory=/opt/meeting/vit-stt
+
+Environment=VIT_STT_RUNTIME_ROOT=/opt/meeting/vit-stt
+Environment=VIT_STT_MODELS_DIR=/opt/meeting/vit-stt/models
+Environment=VIT_STT_SERVER_HOST=127.0.0.1
+Environment=VIT_STT_SERVER_PORT=8091
+Environment=VIT_STT_IDEMPOTENCY_CACHE_DIR=/run/meeting-vit-stt/idempotency
+Environment=FFMPEG=/usr/bin/ffmpeg
+Environment=RUST_LOG=info,stt_core=info,stt_http=info
+Environment=RUST_BACKTRACE=0
+Environment=MALLOC_ARENA_MAX=2
+Environment=OMP_NUM_THREADS=1
+Environment=VIT_STT_READINESS_TIMEOUT=150
+
+RuntimeDirectory=meeting-vit-stt
+RuntimeDirectoryMode=0755
+
+ExecStart=/opt/meeting/vit-stt/bin/stt-http \
+    --workspace-root /opt/meeting/vit-stt \
+    --host 127.0.0.1 \
+    --port 8091
+ExecStartPost=/usr/bin/meeting-vit-stt-readiness
+
+Restart=on-failure
+RestartSec=3
+TimeoutStartSec=180
+TimeoutStopSec=30
+KillSignal=SIGTERM
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictRealtime=true
+SystemCallArchitectures=native
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+UMask=0022
+TasksMax=256
+MemoryHigh=5G
+MemoryMax=6G
+OOMScoreAdjust=-500
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target

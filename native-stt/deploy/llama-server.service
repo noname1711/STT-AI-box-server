@@ -1,0 +1,26 @@
+[Unit]
+Description=Llama.cpp Server for vit-stt Postprocessing
+After=network.target
+
+[Service]
+Type=simple
+User=vit-stt
+WorkingDirectory=/opt/vit-stt
+
+# Execute llama-server with Gemma GGUF model and default configurations
+ExecStart=/usr/local/bin/llama-server -hf unsloth/gemma-4-E4B-it-GGUF --temp 0.3 --top-p 0.95 --top-k 64 --reasoning off -c 32768 --host 0.0.0.0 --port 8001 --alias vit_small_4b
+
+# Automatically restart if service crashes
+Restart=always
+RestartSec=5
+
+# Limit resource usage if desired (optional)
+# CPUQuota=400%
+# MemoryLimit=8G
+
+# Forward standard out/err to journald
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
