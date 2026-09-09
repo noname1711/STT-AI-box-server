@@ -1,7 +1,8 @@
 93d99f4c87e67008aff6b0bfc6107bd45cb2dd10ef35bc81217904637eb81545  ./docs/rebuild.md
 853d664d48b54a01bd559ee5125f8f1d9f52701a9821a5cdd2b9edf576ab8568  ./.gitignore
+b4655065e1e6402cf42f4574ddab1b5c76baf79a89e7ffa26cb6542c57d496cc  ./HL_MEET_WEB_TEST_WINDOWS_V2.zip
 03c0692ab894b9fb40a727673862699da158a4d84820129b68edb93a67154b50  ./manifests/build.env
-7258f3f7acd79c28faebbde309d663f2a4e2f2d2ea4232ab8a9231bedd3d3bbd  ./manifests/pins.env
+d36ee8d37fa89aae585df504942b2ca80a2b790cd63b3f2953bf702ad156d2f7  ./manifests/pins.env
 effa34674761695d435ffa24ac7d50a6672d25c0dfa7ca5152f033059bc914af  ./manifests/yocto-sources.tsv
 93d3b2048ecccfd8aa28c1e1411b60c46f34a939869bb2d31bd397243e71da8f  ./meta-meeting-server/conf/layer.conf
 38f5c9e5b84f70f47c09cbe82afd867a74a9538bfea71ba9e27c61c6aed35153  ./meta-meeting-server/.gitignore
@@ -26,7 +27,8 @@ c63ecc8be37bf8c858cb704b50777e836337797c1ee49e5aecc79cd5c77fc711  ./meta-meeting
 220ad67ca923bef2fa91f2390c786097bf305bceb5e261d4af67b38e938e1079  ./meta-meeting-server/recipes-ai/meeting-speaker/files/speaker-segmentation.onnx
 e90063b90a52f5b241d6e143b193d446c61c9afb4e588850cdad25993809274e  ./meta-meeting-server/recipes-ai/meeting-speaker/meeting-speaker_1.0.bb
 8af5e4f450f1c70051b65d4719ca982e18a66c983d865fe6dd2c88a17b00e277  ./meta-meeting-server/recipes-ai/meeting-translation-models/ENVIT5_SOURCE.lock
-c1a6bc15fd0ce6a1b0329da05d67161e6452bc4d7285850b844398de95fab4c9  ./meta-meeting-server/recipes-ai/meeting-translation-models/meeting-translation-models_1.0.bb
+5d8dab21d5c48c84d6937ee52ba7ef6531f9549fa62b215f7eae1d979ac2690e  ./meta-meeting-server/recipes-ai/meeting-translation-models/files/envit5-runtime.sha256
+3a794d6d586029dbdc7a5480923570f2d0b2d973792e68ebc9007104993aa4f3  ./meta-meeting-server/recipes-ai/meeting-translation-models/meeting-translation-models_1.0.bb
 97861b67a173c3c49525523727114e6c59c9138aaaffd5e26a274a0efad8868e  ./meta-meeting-server/recipes-ai/meeting-translation-models/UPSTREAM_MODEL_CARD.md
 be78552b1de0e360aa2db571af589bb78d4161b46f4cf875d4d89fd5d150fd21  ./meta-meeting-server/recipes-ai/meeting-translator/files/CMakeLists.txt
 ed546df9b3d682c31dd91007302a34a03733e544f2bd52202b81ff9d9d5f44e7  ./meta-meeting-server/recipes-ai/meeting-translator/files/meeting-translator.cpp
@@ -203,9 +205,9 @@ c4a78a218a063f45fe9537a5cac60148b98a8114263421151400b884c2d007a3  ./native-stt/T
 dfbff0657d2a11bb79bd3eab1750bb891e49d3a98594f52606c221df12dee603  ./scripts/build-assets.sh
 bd57fc8a24f3411e7b4b709b4e58fa02d861c43affa13d9492c365c088afd460  ./scripts/build-native-stt.sh
 55fa963fe10e69f09c821a7dc3022438fa34bd85db7a8518012ea1b127c93fa1  ./scripts/build-stt-models.sh
-9ae2768417991183382b87bd126c88b3ae989ce5a8587d2b0e9252852ff7471a  ./scripts/build-translation-model.sh
+82aef74d6a4a3afb6a07eafd5260d15a2a83a72797feb9e4ecefc51a8853902f  ./scripts/build-translation-model.sh
 9669b6ec5fd16acc836c4c5ebaf849c68ecfa93bb46a3461202e4394a859e735  ./scripts/rebuild.sh
-f3344da3cb065442e762d48a2646f59e45373577c1935001676624dcc4cb9c42  ./scripts/verify-source.sh
+22da81c065ba4bf276d5b7bd4ecc6d780fb85f6239874533a8ca6446aa96ab4d  ./scripts/verify-source.sh
 e885a3481f1f18a4219c70a65930ac1fc102dc505ff8da6702e87bdd4e797f44  ./web/app.css
 7e2747c0f43619afe15cc94d9f149a23c1b150dc08e75c1a05a53a9850ff2a91  ./web/app.js
 ae190b51dffc8c393eac2f165cc4e98d4e6ed0f81c50249b04d311c8ab794581  ./web/_headers

@@ -70,6 +70,23 @@ else
 fi
 rm -f /tmp/hlmeet_old_outer.$$
 
+
+# EnViT5 is certified by inference-runtime payload hashes.
+ENVIT5_RUNTIME_MANIFEST="$ROOT/meta-meeting-server/recipes-ai/meeting-translation-models/files/envit5-runtime.sha256"
+ENVIT5_RECIPE="$ROOT/meta-meeting-server/recipes-ai/meeting-translation-models/meeting-translation-models_1.0.bb"
+
+if [[ -f "$ENVIT5_RUNTIME_MANIFEST" ]]; then
+  pass "EnViT5 runtime checksum manifest"
+else
+  fail "missing EnViT5 runtime checksum manifest"
+fi
+
+if grep -Fq 'SRC_URI[sha256sum]' "$ENVIT5_RECIPE"; then
+  fail "EnViT5 recipe still depends on outer tar checksum"
+else
+  pass "EnViT5 certified by inner runtime hashes"
+fi
+
 if [[ "$FAIL" -ne 0 ]]; then
   echo "SOURCE_REPO_GATE=FAIL"
   exit 2
