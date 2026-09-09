@@ -387,27 +387,30 @@ impl WorkspacePaths {
             }
         }
 
-        // 6. Development workspace fallback via compile-time CARGO_MANIFEST_DIR
-        if let Some(manifest_dir) = option_env!("CARGO_MANIFEST_DIR") {
-            let manifest_path = PathBuf::from(manifest_dir);
-            if let Some(workspace_dir) = manifest_path.parent().and_then(|p| p.parent()) {
-                searched_paths.push(format!(
-                    "CARGO_MANIFEST_DIR workspace root: {}",
-                    workspace_dir.display()
-                ));
-                if workspace_dir.join("config/runtime.toml").exists() {
-                    let workspace_dir = workspace_dir
-                        .canonicalize()
-                        .unwrap_or_else(|_| workspace_dir.to_path_buf());
-                    let models_dir = explicit_models
-                        .clone()
-                        .or_else(|| std::env::var("VIT_STT_MODELS_DIR").map(PathBuf::from).ok())
-                        .unwrap_or_else(|| workspace_dir.join("models"));
-                    let models_dir = models_dir.canonicalize().unwrap_or(models_dir);
-                    return Ok(Self {
-                        root: workspace_dir,
-                        models_dir,
-                    });
+        #[cfg(debug_assertions)]
+        {
+            // 6. Development workspace fallback via compile-time CARGO_MANIFEST_DIR
+            if let Some(manifest_dir) = option_env!("CARGO_MANIFEST_DIR") {
+                let manifest_path = PathBuf::from(manifest_dir);
+                if let Some(workspace_dir) = manifest_path.parent().and_then(|p| p.parent()) {
+                    searched_paths.push(format!(
+                        "CARGO_MANIFEST_DIR workspace root: {}",
+                        workspace_dir.display()
+                    ));
+                    if workspace_dir.join("config/runtime.toml").exists() {
+                        let workspace_dir = workspace_dir
+                            .canonicalize()
+                            .unwrap_or_else(|_| workspace_dir.to_path_buf());
+                        let models_dir = explicit_models
+                            .clone()
+                            .or_else(|| std::env::var("VIT_STT_MODELS_DIR").map(PathBuf::from).ok())
+                            .unwrap_or_else(|| workspace_dir.join("models"));
+                        let models_dir = models_dir.canonicalize().unwrap_or(models_dir);
+                        return Ok(Self {
+                            root: workspace_dir,
+                            models_dir,
+                        });
+                    }
                 }
             }
         }

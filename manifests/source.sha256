@@ -152,7 +152,7 @@ bdb4bc041f12e24f1bb1861387b7d884b88f839099cc628424b733cf5218c540  ./native-stt/c
 0bb8d1bae802028d4d8d770ac37ef232cad21ebca272f18bc4c6fd0a742e1a45  ./native-stt/crates/stt-core/src/assets.rs
 8dfac94cfb2a08a302521598fbedec031a55c67c80f61c05f4914b2b0f154a65  ./native-stt/crates/stt-core/src/audio.rs
 115846d2bac7cafcf4b3679ea31d666d745d21445f9a14e91551bf10d1b19727  ./native-stt/crates/stt-core/src/checksum.rs
-105d1ea21acaba0aea2b055285dc74d1540243617f83e7cb65f3e4155472a04c  ./native-stt/crates/stt-core/src/config.rs
+0f519aa17bc21703383905078856ebbd312467fd99ea43651d21d0a9bbd24de5  ./native-stt/crates/stt-core/src/config.rs
 afc04fc399da6144fa60592b51d13a6afd97cd51cfaef26480d7d8ca3055b930  ./native-stt/crates/stt-core/src/lib.rs
 16c56aa923121041e9230b24649eacc158d055dde84d54e5811f0fb74db95578  ./native-stt/crates/stt-core/src/postprocess.rs
 98d01ac86276f1241eb6e24f8b789fdb3c74a24f222a24a837f35f024a2cff98  ./native-stt/crates/stt-core/src/recognizer.rs
