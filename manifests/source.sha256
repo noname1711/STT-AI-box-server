@@ -206,7 +206,7 @@ dfbff0657d2a11bb79bd3eab1750bb891e49d3a98594f52606c221df12dee603  ./scripts/buil
 bd57fc8a24f3411e7b4b709b4e58fa02d861c43affa13d9492c365c088afd460  ./scripts/build-native-stt.sh
 55fa963fe10e69f09c821a7dc3022438fa34bd85db7a8518012ea1b127c93fa1  ./scripts/build-stt-models.sh
 82aef74d6a4a3afb6a07eafd5260d15a2a83a72797feb9e4ecefc51a8853902f  ./scripts/build-translation-model.sh
-9669b6ec5fd16acc836c4c5ebaf849c68ecfa93bb46a3461202e4394a859e735  ./scripts/rebuild.sh
+b8758659bb2fac84348e2897a57997117f2dd6ada1960dbd54bbe5de75810008  ./scripts/rebuild.sh
 9a1cb4b076df1a4673f634550fa86018a5fe287a3b703cf940b8ae0b440743ee  ./scripts/verify-source.sh
 e885a3481f1f18a4219c70a65930ac1fc102dc505ff8da6702e87bdd4e797f44  ./web/app.css
 7e2747c0f43619afe15cc94d9f149a23c1b150dc08e75c1a05a53a9850ff2a91  ./web/app.js

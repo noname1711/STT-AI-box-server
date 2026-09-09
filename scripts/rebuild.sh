@@ -136,6 +136,12 @@ if ! grep -Fq 'HL_MEET_ACCESS_PROFILE = "lab"' \
         >> "$BUILDDIR/conf/local.conf"
 fi
 
+if ! grep -Fq 'LICENSE_FLAGS_ACCEPTED += "commercial"' \
+        "$BUILDDIR/conf/local.conf"; then
+    printf '\nLICENSE_FLAGS_ACCEPTED += "commercial"\n' \
+        >> "$BUILDDIR/conf/local.conf"
+fi
+
 #
 # 5. Build final HL Meet image.
 #
