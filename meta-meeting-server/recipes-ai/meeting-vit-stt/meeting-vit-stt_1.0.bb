@@ -36,9 +36,9 @@ do_install() {
     # Accuracy/release pin: verify the exact production payload, not a historical
     # outer tar byte layout. Generated archives may be rebuilt deterministically;
     # the executable/model bytes below are the release invariant.
-    echo "38d81e94d0660d324275460397d5eec78192d1afe680f4a19ea915e1b4438340  ${D}/opt/meeting/vit-stt/bin/stt-http" | sha256sum -c - \
+    echo "b9d3796fd01ddec41fa0245a34526dd78f77a8b2fd91bb625428bfe2ae836d6d  ${D}/opt/meeting/vit-stt/bin/stt-http" | sha256sum -c - \
         || bbfatal "stt-http checksum mismatch"
-    echo "3b7332929fb7d78da1c29bed9a119f52c73aeb5dee58b1a4bb9403c45cb77eda  ${D}/opt/meeting/vit-stt/bin/stt-cli" | sha256sum -c - \
+    echo "ce2cdcc9917347dcdfb5abfc5083842839251716260e1fcfa56c8e832ed7c38c  ${D}/opt/meeting/vit-stt/bin/stt-cli" | sha256sum -c - \
         || bbfatal "stt-cli checksum mismatch"
 
     VIM=${D}/opt/meeting/vit-stt/models/sherpa-onnx-zipformer-vi-int8-2025-04-20

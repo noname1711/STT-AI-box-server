@@ -87,6 +87,40 @@ else
   pass "EnViT5 certified by inner runtime hashes"
 fi
 
+
+# Native release rebuild must remain path-independent and recipe/pins must agree.
+NATIVE_RECIPE="$ROOT/meta-meeting-server/recipes-ai/meeting-vit-stt/meeting-vit-stt_1.0.bb"
+
+STT_HTTP_PIN="$(
+  grep '^STT_HTTP_SHA256=' "$ROOT/manifests/pins.env" |
+  head -n1 |
+  cut -d= -f2-
+)"
+
+STT_CLI_PIN="$(
+  grep '^STT_CLI_SHA256=' "$ROOT/manifests/pins.env" |
+  head -n1 |
+  cut -d= -f2-
+)"
+
+if grep -Fxq 'NATIVE_RELEASE_PATH_INDEPENDENT=TRUE' "$ROOT/manifests/pins.env"; then
+  pass "native release path-independent invariant pinned"
+else
+  fail "native release path-independent invariant missing"
+fi
+
+if [[ -n "$STT_HTTP_PIN" ]] && grep -Fq "$STT_HTTP_PIN" "$NATIVE_RECIPE"; then
+  pass "stt-http pin matches Yocto recipe"
+else
+  fail "stt-http pin/recipe mismatch"
+fi
+
+if [[ -n "$STT_CLI_PIN" ]] && grep -Fq "$STT_CLI_PIN" "$NATIVE_RECIPE"; then
+  pass "stt-cli pin matches Yocto recipe"
+else
+  fail "stt-cli pin/recipe mismatch"
+fi
+
 if [[ "$FAIL" -ne 0 ]]; then
   echo "SOURCE_REPO_GATE=FAIL"
   exit 2

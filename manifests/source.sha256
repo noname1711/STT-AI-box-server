@@ -2,7 +2,7 @@
 853d664d48b54a01bd559ee5125f8f1d9f52701a9821a5cdd2b9edf576ab8568  ./.gitignore
 b4655065e1e6402cf42f4574ddab1b5c76baf79a89e7ffa26cb6542c57d496cc  ./HL_MEET_WEB_TEST_WINDOWS_V2.zip
 03c0692ab894b9fb40a727673862699da158a4d84820129b68edb93a67154b50  ./manifests/build.env
-d36ee8d37fa89aae585df504942b2ca80a2b790cd63b3f2953bf702ad156d2f7  ./manifests/pins.env
+3495c0d7fb8f42f903c57e0f4935aaf33fa294268cf178f068b610b727d729f6  ./manifests/pins.env
 effa34674761695d435ffa24ac7d50a6672d25c0dfa7ca5152f033059bc914af  ./manifests/yocto-sources.tsv
 93d3b2048ecccfd8aa28c1e1411b60c46f34a939869bb2d31bd397243e71da8f  ./meta-meeting-server/conf/layer.conf
 38f5c9e5b84f70f47c09cbe82afd867a74a9538bfea71ba9e27c61c6aed35153  ./meta-meeting-server/.gitignore
@@ -46,7 +46,7 @@ dac6ecefb9434da05285062586f40e1bfe28bb1d3ee7990417107aab880d0328  ./meta-meeting
 9ed11c2125dca4e89152580717ffbc57ef90a57efdb738bc6393b07711f407ba  ./meta-meeting-server/recipes-ai/meeting-vit-stt/files/models.local.json
 ae2eeb6f5ae52ee1b02d9f77ba23c09129221b5f4285468e0027a5ff50b241c8  ./meta-meeting-server/recipes-ai/meeting-vit-stt/files/runtime.toml
 c4a78a218a063f45fe9537a5cac60148b98a8114263421151400b884c2d007a3  ./meta-meeting-server/recipes-ai/meeting-vit-stt/files/THIRD_PARTY_NOTICES.md
-c31a771ef1cdc62d732cb05bedde21dbe0699fe39aed23aabb42062fe230be22  ./meta-meeting-server/recipes-ai/meeting-vit-stt/meeting-vit-stt_1.0.bb
+01ae5bb8b734c17a964669eacfd567e41e8bcb77ef0e7a9eb0822707f8a099c7  ./meta-meeting-server/recipes-ai/meeting-vit-stt/meeting-vit-stt_1.0.bb
 db33bfeaabc3c3568abeb04bc0e625e27cd787030b3caa7b69c8f3238f304d8b  ./meta-meeting-server/recipes-ai/sentencepiece/sentencepiece_0.2.1.bb
 bb4ed69f399cb12af204efa0dc4b04c2e509ce37540428c145489e2b323f8b36  ./meta-meeting-server/recipes-apps/meeting-server/files/meeting-server.env
 f7c3ac4a5d830d9d9f05cd085dd13744d71a728974fe7c81801fd08d4746e0ba  ./meta-meeting-server/recipes-apps/meeting-server/files/meeting-server.service
@@ -207,7 +207,7 @@ bd57fc8a24f3411e7b4b709b4e58fa02d861c43affa13d9492c365c088afd460  ./scripts/buil
 55fa963fe10e69f09c821a7dc3022438fa34bd85db7a8518012ea1b127c93fa1  ./scripts/build-stt-models.sh
 82aef74d6a4a3afb6a07eafd5260d15a2a83a72797feb9e4ecefc51a8853902f  ./scripts/build-translation-model.sh
 9669b6ec5fd16acc836c4c5ebaf849c68ecfa93bb46a3461202e4394a859e735  ./scripts/rebuild.sh
-22da81c065ba4bf276d5b7bd4ecc6d780fb85f6239874533a8ca6446aa96ab4d  ./scripts/verify-source.sh
+9a1cb4b076df1a4673f634550fa86018a5fe287a3b703cf940b8ae0b440743ee  ./scripts/verify-source.sh
 e885a3481f1f18a4219c70a65930ac1fc102dc505ff8da6702e87bdd4e797f44  ./web/app.css
 7e2747c0f43619afe15cc94d9f149a23c1b150dc08e75c1a05a53a9850ff2a91  ./web/app.js
 ae190b51dffc8c393eac2f165cc4e98d4e6ed0f81c50249b04d311c8ab794581  ./web/_headers
